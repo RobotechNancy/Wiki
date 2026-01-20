@@ -7,6 +7,13 @@ settings:
 importers:
 
   .:
+    dependencies:
+      medium-zoom:
+        specifier: ^1.1.0
+        version: 1.1.0
+      vitepress-component-medium-zoom:
+        specifier: ^1.1.1
+        version: 1.1.1
     devDependencies:
       vitepress:
         specifier: 2.0.0-alpha.15
@@ -727,6 +734,9 @@ packages:
   mdast-util-to-hast@13.2.1:
     resolution: {integrity: sha512-cctsq2wp5vTsLIcaymblUriiTcZd0CwWtCbLvrOzYCDZoWyMNV8sZ7krj09FSnsiJi3WVsHLM4k6Dq/yaPyCXA==}
 
+  medium-zoom@1.1.0:
+    resolution: {integrity: sha512-ewyDsp7k4InCUp3jRmwHBRFGyjBimKps/AJLjRSox+2q/2H4p/PNpQf+pwONWlJiOudkBXtbdmVbFjqyybfTmQ==}
+
   micromark-util-character@2.1.1:
     resolution: {integrity: sha512-wv8tdUTJ3thSFFFJKtpYKOYiGP2+v96Hvk4Tu8KpCAsTMs6yi+nVmGh1syvSCsaxz45J6Jbw+9DD6g97+NV67Q==}
 
@@ -905,6 +915,9 @@ packages:
         optional: true
       yaml:
         optional: true
+
+  vitepress-component-medium-zoom@1.1.1:
+    resolution: {integrity: sha512-kqddM27Werz6qLBYKWpjtE39A+qOWZBJarLmBjLCDy/xhpAb1XCqwtLwvpQloiqI/VhVHqMXSVpXLnrQcEAaQw==}
 
   vitepress@2.0.0-alpha.15:
     resolution: {integrity: sha512-jhjSYd10Z6RZiKOa7jy0xMVf5NB5oSc/lS3bD/QoUc6V8PrvQR5JhC9104NEt6+oTGY/ftieVWxY9v7YI+1IjA==}
@@ -1589,6 +1602,8 @@ snapshots:
       unist-util-visit: 5.0.0
       vfile: 6.0.3
 
+  medium-zoom@1.1.0: {}
+
   micromark-util-character@2.1.1:
     dependencies:
       micromark-util-symbol: 2.0.1
@@ -1771,6 +1786,10 @@ snapshots:
       tinyglobby: 0.2.15
     optionalDependencies:
       fsevents: 2.3.3
+
+  vitepress-component-medium-zoom@1.1.1:
+    dependencies:
+      medium-zoom: 1.1.0
 
   vitepress@2.0.0-alpha.15(@algolia/client-search@5.46.3)(postcss@8.5.6)(react@19.2.3)(search-insights@2.17.3):
     dependencies:
