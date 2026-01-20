@@ -142,27 +142,27 @@ export default defineConfig({
           text: "Modules XBee",
           collapsed: true,
           items: [
-            { text: "Principe", link: "/Info/Xbee/Principe" },
-            { text: "Utiliser la librairie", link: "/Info/Xbee/Librairie" },
+            { text: "Principe", link: "/Info/XBee/Principe" },
+            { text: "Utiliser la librairie", link: "/Info/XBee/Librairie" },
             {
               text: "Implémentation",
               collapsed: false,
               items: [
                 {
                   text: "Format des trames",
-                  link: "/Info/Xbee/Implementation/Format",
+                  link: "/Info/XBee/Implementation/Format",
                 },
                 {
                   text: "Initialisation",
-                  link: "/Info/Xbee/Implementation/Initialisation",
+                  link: "/Info/XBee/Implementation/Initialisation",
                 },
                 {
                   text: "Réception des données",
-                  link: "/Info/Xbee/Implementation/Reception",
+                  link: "/Info/XBee/Implementation/Reception",
                 },
                 {
                   text: "Envoi de données",
-                  link: "/Info/Xbee/Implementation/Envoi",
+                  link: "/Info/XBee/Implementation/Envoi",
                 },
               ],
             },
