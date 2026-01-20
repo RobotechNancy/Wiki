@@ -10,7 +10,7 @@ export default defineConfig({
       "link",
       {
         rel: "icon",
-        href: "/favicon.webp",
+        href: "/Wiki/favicon.webp",
       },
     ],
   ],
@@ -35,7 +35,7 @@ export default defineConfig({
       copyright: "Copyright © 2019-2025 Gabriel Mouchette",
     },
     editLink: {
-      pattern: "https://github.com/RobotechNancy/Wiki/edit/main/docs/:path",
+      pattern: "https://github.com/RobotechNancy/Wiki/edit/master/docs/:path",
     },
     lastUpdated: {
       text: "Updated at",
@@ -57,7 +57,7 @@ export default defineConfig({
     socialLinks: [
       {
         icon: "github",
-        link: "https://github.com/RobotechNancy/robotechnancy.github.io",
+        link: "https://github.com/RobotechNancy/Wiki",
       },
     ],
 
