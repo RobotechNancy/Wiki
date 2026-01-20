@@ -13,7 +13,7 @@ _Plateau de jeu 2024_
 Chaque balise est montée d'un module contenant :
 
 - Une caméra
-- Un module [XBee](/communication/XBee/principe) (S1 Pro)
+- Un module [XBee](/Info/XBee/Principe) (S1 Pro)
 - Une batterie LiFePO4
 - Un Raspberry Pi Zero ([OpenCV](https://opencv.org/) et [OpenCV contrib](https://github.com/opencv/opencv_contrib))
 
@@ -21,7 +21,7 @@ Chaque balise est montée d'un module contenant :
 
 Pour utiliser la [librairie ArUCO](https://github.com/RobotechNancy/Odometrie/tree/master/ArUCO), il faut installer :
 
-- La librairie custom [XBee](/XBee/Librairie)
+- La librairie custom [XBee](/Info/XBee/Librairie)
 - La librairie OpenCV avec OpenCV contrib :
 
 ```bash

@@ -22,6 +22,11 @@ export default defineConfig({
       lazyLoading: true,
     },
   },
+  vite: {
+    ssr: {
+      noExternal: ["vitepress-component-medium-zoom"],
+    },
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
 
@@ -212,7 +217,10 @@ export default defineConfig({
               text: "Odométrie Relative",
               collapsed: false,
               items: [
-                { text: "Capteur optique", link: "/Info/Odometrie/Relative/Optique" },
+                {
+                  text: "Capteur optique",
+                  link: "/Info/Odometrie/Relative/Optique",
+                },
                 { text: "Matériel", link: "/Info/Odometrie/Relative/Materiel" },
               ],
             },
