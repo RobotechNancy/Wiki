@@ -28,12 +28,8 @@ qui permet de prendre des captures de la grille sous différents angles, orienta
 
 Elle fonctionne comme suit :
 
--La grille de calibration est détecté
-
--On appuie sur « c » pour prendre des captures de l’image
-
--Une fois les nombreuses captures prises, la fonction compare des données issues de la reconnaissance de la grille physique à la même grille d’origine reconstruite numériquement (utilisation des informations de configuration)
-
--Cette comparaison permet de calculer des paramètres de la caméra
-
--Ces paramètres sont ensuite enregistrés dans le fichier "camera_params.yml"
+1. La grille de calibration est détecté
+2. On appuie sur « c » pour prendre des captures de l’image
+3. Une fois les nombreuses captures prises, la fonction compare des données issues de la reconnaissance de la grille physique à la même grille d’origine reconstruite numériquement (utilisation des informations de configuration)
+4. Cette comparaison permet de calculer des paramètres de la caméra
+5. Ces paramètres sont ensuite enregistrés dans le fichier "camera_params.yml"

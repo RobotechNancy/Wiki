@@ -249,7 +249,16 @@ export default defineConfig({
           ],
         },
       ],
-      "/meca/": [],
+      "/Meca/": [
+        {
+          text: "Usinage",
+          items: [
+            { text: "Setup ProverXL 4030", link: "/Meca/Usinage/Setup" },
+            { text: "Usinage 2D", link: "/Meca/Usinage/Usinage2D" },
+            { text: "Usinage 3D", link: "/Meca/Usinage/Usinage3D" },
+          ]
+        }
+      ],
     },
   },
 });
