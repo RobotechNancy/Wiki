@@ -16,6 +16,6 @@ La manière la plus facile de développer pour STM32 est d'[installer STM32CubeI
 > (ne nécessite pas de donner son email, nom et prénom)
 
 Une l'installeur téléchargé, il suffit de l'exécuter et de suivre les instructions.
-Sur Linux, il est possible que l'installeur ne soit pas exécutable, il faut alors le rendre exécutable avec `chmod +x fichier_installeur`. 
+Sur Linux, il est possible que l'installeur ne soit pas exécutable, il faut alors le rendre exécutable avec `chmod +x fichier_installeur`.
 
-![STM32CubeIDE](/images/STM32/cubeide.webp)
+<img src="/images/STM32/cubeide.webp" alt="STM32CubeIDE">

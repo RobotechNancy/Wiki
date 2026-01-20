@@ -17,6 +17,11 @@ export default defineConfig({
   sitemap: {
     hostname: "https://robotechnancy.github.io/Wiki",
   },
+  markdown: {
+    image: {
+      lazyLoading: true,
+    },
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
 
@@ -25,6 +30,20 @@ export default defineConfig({
     },
     editLink: {
       pattern: "https://github.com/RobotechNancy/Wiki/edit/main/docs/:path",
+    },
+    lastUpdated: {
+      text: "Updated at",
+      formatOptions: {
+        dateStyle: "medium",
+        timeStyle: "short",
+        hour12: false,
+      },
+    },
+    search: {
+      provider: "local",
+      options: {
+        detailedView: true,
+      },
     },
     logo: "/favicon.webp",
     externalLinkIcon: true,
@@ -59,8 +78,8 @@ export default defineConfig({
             },
             {
               text: "Connexion SSH",
-              link: "/Info/ConnexionSSH"
-            }
+              link: "/Info/ConnexionSSH",
+            },
           ],
         },
         {
@@ -91,7 +110,7 @@ export default defineConfig({
             { text: "Librairie STM32", link: "/Info/CAN/STM32" },
             {
               text: "Implémentation",
-              collapsed: true,
+              collapsed: false,
               items: [
                 {
                   text: "Format des trames",
@@ -121,7 +140,7 @@ export default defineConfig({
             { text: "Utiliser la librairie", link: "/Info/Xbee/Librairie" },
             {
               text: "Implémentation",
-              collapsed: true,
+              collapsed: false,
               items: [
                 {
                   text: "Format des trames",
@@ -153,7 +172,7 @@ export default defineConfig({
             },
             {
               text: "Odométrie Absolue",
-              collapsed: true,
+              collapsed: false,
               items: [
                 {
                   text: "Présentation générale",
@@ -191,10 +210,10 @@ export default defineConfig({
             },
             {
               text: "Odométrie Relative",
-              collapsed: true,
+              collapsed: false,
               items: [
-                { text: "Capteur optique", link: "/Info/Relative/Optique" },
-                { text: "Matériel", link: "/Info/Relative/Materiel" },
+                { text: "Capteur optique", link: "/Info/Odometrie/Relative/Optique" },
+                { text: "Matériel", link: "/Info/Odometrie/Relative/Materiel" },
               ],
             },
           ],
@@ -206,7 +225,7 @@ export default defineConfig({
             { text: "STM32", link: "/Info/PWM/STM32" },
             {
               text: "PCA9685",
-              collapsed: true,
+              collapsed: false,
               items: [
                 {
                   text: "Utiliser la librairie",

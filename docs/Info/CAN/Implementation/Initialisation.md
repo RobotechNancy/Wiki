@@ -5,7 +5,7 @@ description: Implémentation de l'initialisation du bus CAN
 
 # Initialisation
 
-### Côté STM32
+## Côté STM32
 
 Côté STM32, l'initialisation est très simple :
 ```cpp
@@ -19,7 +19,7 @@ HAL_CAN_ActivateNotification(hcan, CAN_IT_RX_FIFO0_MSG_PENDING);
 Grâce à la seconde fonction, on indique quelle interruption doit être utilisée lorsqu'un message est reçu.
 Ici on utilise `CAN_IT_RX_FIFO0_MSG_PENDING` qui permet d'exécuter `HAL_CAN_RxFifo0MsgPendingCallback` lorsque le `FIFO0` (queue) reçoit un message.
 
-### Côté Raspberry
+## Côté Raspberry
 
 Les librairies standard Linux sont utilisées pour communiquer avec le bus CAN. D'abord, on ouvre un socket :
 ```cpp

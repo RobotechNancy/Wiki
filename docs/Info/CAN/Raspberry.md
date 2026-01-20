@@ -13,7 +13,7 @@ Pour installer la librairie CAN sur Linux, il faut :
 
 > Pour mettre à jour la librairie, `git pull` puis `sudo ./lib_manager install CAN`
 
-### Configuration du bus
+## Configuration du bus
 
 Avant d'utiliser la librairie CAN, il est important de créer l'interface CAN :
 
@@ -32,7 +32,7 @@ echo "dtoverlay=mcp2515-can0,oscillator=8000000,interrupt=25,spimaxfrequency=200
 sudo reboot
 ```
 
-### Initialisation
+## Initialisation
 
 Pour initialiser un module CAN, il faut créer une instance de la classe `CAN` et lui attribuer une adresse :
 ```cpp
@@ -53,7 +53,7 @@ sudo ip link set up vcan0
 sudo ip link set can0 up type can bitrate 500000 loopback off
 ```
 
-### Envoyer des données
+## Envoyer des données
 
 Pour envoyer une données, il suffit d'utiliser `CAN::send` :
 ```cpp
@@ -70,7 +70,7 @@ can.send(
 
 Ici, on envoie un message de priorité standard à la base roulante en mode debug qui lui demande d'avancer sans attendre de réponse.
 
-### Recevoir des données
+## Recevoir des données
 
 Il existe deux manières de recevoir des données :
 

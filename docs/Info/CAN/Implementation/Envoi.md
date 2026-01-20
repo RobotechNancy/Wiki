@@ -5,7 +5,7 @@ description: Implémentation de l'envoi de données
 
 # Envoi de données
 
-### Côté STM
+## Côté STM
 
 L'envoi de données utilise la fonction `HAL_CAN_AddTxMessage`:
 ```c
@@ -36,7 +36,7 @@ uint32_t TxMailbox;
 HAL_CAN_AddTxMessage(hcan, &txHeader, TxData, &TxMailbox);
 ```
 
-### Côté Raspberry
+## Côté Raspberry
 
 Côté Raspberry, l'envoi est quasi identique à STM32 :
 ```cpp

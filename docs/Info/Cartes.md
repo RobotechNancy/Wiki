@@ -7,9 +7,9 @@ description: Toutes les cartes utilisées pour le projet
 
 Pour tout ce qui est prise de décision et reconnaissance d'images, des Raspberry Pi sont utilisées :
 
-![GPIO Raspberry Pi](/images/boards/GPIO.webp){: style="display: inline-block;"}
-![Tailles Raspberry Pi](/images/boards/RPI.webp){: style="display: inline-block;"}
-{: style="text-align: center;"}
+| GPIO Raspberry Pi                              | Tailles Raspberry Pi                             |
+| ---------------------------------------------- | ------------------------------------------------ |
+| <img src="/images/boards/GPIO.webp" alt="GPIO Raspberry Pi"> | <img src="/images/boards/RPI.webp" alt="Tailles Raspberry Pi"> |
 
 Pour le reste, des NUCLEO-L432KC sont utilisées :
-![NUCLEO-L432KC](/images/boards/L432KC.webp)
+<img src="/images/boards/L432KC.webp" alt="NUCLEO-L432KC" width="75%">

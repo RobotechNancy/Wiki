@@ -6,8 +6,9 @@ description: Documentation sur l'utilisation de l'odométrie absolue
 # Présentation générale
 
 Des tags ArUCO (en rouge) sont placés sur le plateau et les éléments de jeu. Pour situer ces tags, des modules sont placés sur des balises (en bleu ou jaune) :
-![Terrain de jeu](/images/aruco/playground.webp){:loading="lazy"}
-*Plateau de jeu 2024*
+<img src="/images/aruco/playground.webp" alt="Terrain de jeu">
+
+_Plateau de jeu 2024_
 
 Chaque balise est montée d'un module contenant :
 
@@ -16,12 +17,13 @@ Chaque balise est montée d'un module contenant :
 - Une batterie LiFePO4
 - Un Raspberry Pi Zero ([OpenCV](https://opencv.org/) et [OpenCV contrib](https://github.com/opencv/opencv_contrib))
 
-### Installation
+## Installation
 
 Pour utiliser la [librairie ArUCO](https://github.com/RobotechNancy/Odometrie/tree/master/ArUCO), il faut installer :
 
 - La librairie custom [XBee](/XBee/Librairie)
 - La librairie OpenCV avec OpenCV contrib :
+
 ```bash
 # Installe Cmake
 sudo apt install cmake libgtk2.0-dev
@@ -40,7 +42,7 @@ sudo make install # Ajouter -j3 accélère la compilation mais peut faire crashe
 > Le processus d'installation peut prendre plusieures heures sur une Raspberry Pi.
 > Il est aussi possible de cross-compiler OpenCV (non testé).
 
-### Calibration
+## Calibration
 
 Pour avoir une meilleure détection, il est nécessaire de calibrer la caméra :
 
@@ -52,11 +54,11 @@ Pour avoir une meilleure détection, il est nécessaire de calibrer la caméra :
 
 Si tout s'est bien passé, un fichier `data/camera_params.yml` a été créé contenant les paramètres de la caméra (matrice de projection, distorsion, etc...).
 
-### Utilisation
+## Utilisation
 
 `./ArUCO estimate` permet de lancer le script de détection et d'estimation de la position des tags ArUCO.
 Les paramètres sont repris de `data/camera_params.yml` et `data/config.yml` et les positions sont données par rapport à un tag de référence (`ref_marker_id`).
 
-![ArUCO Estimation](/images/aruco/estimation.webp){:loading="lazy" style="display: inline-block;" }
-![ArUCO AR](/images/aruco/AR.webp){:loading="lazy" style="display: inline-block;" }
-{: style="text-align: center" }
+| ArUCO Estimation                                  | ArUCO AR               |
+| -------------------------------------------------- | ---------------------------------- |
+| <img src="/images/aruco/estimation.webp" alt="ArUCO Estimation"> | <img src="/images/aruco/AR.webp" alt="ArUCO AR"> |

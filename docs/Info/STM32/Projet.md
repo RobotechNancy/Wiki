@@ -12,8 +12,8 @@ Il y a plusieurs options pour créer un nouveau projet :
 
 Dans les deux cas, une fenêtre s'ouvre pour choisir le microcontrôleur (des téléchargements peuvent se lancer automatiquement).
 Pour trouver le bon microcontrôleur, un champ de recherche est disponible en haut à droite (`Commercial Part Number`) :
-![Sélecteur de microcontrôleur](/images/STM32/board_selector.webp)
+<img src="/images/STM32/board_selector.webp" alt="Sélecteur de microcontrôleur">
 
 Une fois le microcontrôleur sélectionné (ici une L432KC), appuyer sur `Next` en bas à droite, il faut maintenant choisir les paramètres du projet.
 A Robotech Nancy, les projets sont des projets STM32Cube en C pour des microcontrôleurs NUCLEO-L432KC :
-![Nouveau projet](/images/STM32/stm32_project.webp)
+<img src="/images/STM32/stm32_project.webp" alt="Nouveau projet">

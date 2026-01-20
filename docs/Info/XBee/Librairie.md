@@ -14,9 +14,10 @@ La librairie XBee est utilisable uniquement sur Linux, pour l'installer :
 > [!TIP]
 > Pour mettre à jour la librairie, `git pull` puis `sudo ./lib_manager install XBee`
 
-### Initialisation
+## Initialisation
 
 Pour initialiser un module XBee, il faut créer une instance de la classe `XBee` :
+
 ```cpp
 // Adresses 8 bits (0x00 à 0xFF) ou macro XB_ADDR_<...>
 XBee xbee(XB_ADDR_ROBOT_01);
@@ -36,9 +37,10 @@ Si une mauvaise configuration est à l'origine d'une erreur d'initialisation, vo
 > [!TIP]
 > Si vous utiliser l'adaptateur USB, il est possible de réinitialiser la configuration en appuyant sur le bouton reset.
 
-### Envoyer des données
+## Envoyer des données
 
 Pour envoyer des données, il suffit d'utiliser la fonction `XBee::send`:
+
 ```cpp
 // On envoie un octet avec le code fonction TEST_ALIVE à la caméra 01
 xbee.send(XB_ADDR_CAMERA_01, XB_FCT_TEST_ALIVE, {0x01});
@@ -49,11 +51,12 @@ xbee.send(XB_ADDR_CAMERA_02, XB_FCT_TEST_ALIVE, data);
 
 Il est possible d'envoyer jusqu'à 243 octets de données, la fonction retourne un code d'erreur le cas echéant.
 
-### Recevoir des données
+## Recevoir des données
 
 Il existe deux moyens de recevoir des données :
 
 - De manière synchrone (bloque le programme) avec `XBee::send` :
+
 ```cpp
 
 // On veut récupérer toutes les positions
@@ -72,7 +75,9 @@ switch res.status {
         std::cout << "Une erreur est survenue :(" << std::endl;
 }
 ```
+
 - De manière asynchrone (non bloquant) avec `XBee::bind` :
+
 ```cpp
 void onTestAlive(XBee &xbee, xbee_frame_t &frame) {
     std::cout << "Code fonction TEST_ALIVE reçu" << std::endl;
@@ -83,6 +88,7 @@ xbee.bind(XB_FCT_TEST_ALIVE, onTestAlive);
 ```
 
 Dans les deux cas, il faut utiliser `XBee::startListening` pour pouvoir recevoir des données, par exemple :
+
 ```cpp
 #include <robotech/xbee.h>
 
@@ -99,7 +105,7 @@ int main() {
         xbee.send(frame.emitterAddress, XB_FCT_TEST_ALIVE, frame.data);
     });
 
-    // On bloque le thread principal pour laisser le 
+    // On bloque le thread principal pour laisser le
     // temps au programme de recevoir des meesages
     xbee.startListening();
     std::this_thread::sleep_for(std::chrono::seconds(10));

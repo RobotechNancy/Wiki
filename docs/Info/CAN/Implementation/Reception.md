@@ -5,7 +5,7 @@ description: Implémentation de la réception de données
 
 # Réception de données
 
-### Côté STM32
+## Côté STM32
 
 Pour récupérer les données reçues et la formater en `can_frame_t`, on utilise `CAN_RECEIVE` :
 ```cpp
@@ -24,7 +24,7 @@ can_frame_t frame;
 frame.receiverAddress = (RxHeader.ExtId & CAN_MASK_RECEIVER_ADDR) >> CAN_OFFSET_RECEIVER_ADDR;
 ```
 
-### Côté Raspberry
+## Côté Raspberry
 
 Pour récupérer les données de manière non bloquante, on utilise un thread séparé :
 ```cpp

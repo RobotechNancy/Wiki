@@ -6,9 +6,9 @@ description: Comment utiliser la librairie custom pour générer jusqu'à 16 sig
 # Utiliser la librairie
 
 La carte PCA9685 permet de contrôler jusqu'à 16 sorties [PWM](/PWM/STM32) par I2C :
-![PCA965](/images/PWM/PCA9685.webp){:loading="lazy"}
+<img src="/images/PWM/PCA9685.webp" alt="PCA965">
 
-### Initialisation
+## Initialisation
 
 L'initialisation de la carte se fait automatiquement avec `PCA9685_init()`. Quelques détails importants sur la carte :
 
@@ -18,23 +18,23 @@ L'initialisation de la carte se fait automatiquement avec `PCA9685_init()`. Quel
 - Résistances de pull-up externes : 1 kΩ
 - Output Enable (OE) à 0 pour activer les sorties
 
-### Contrôle des sorties
+## Contrôle des sorties
 
 Pour contrôler une sortie, il faut d'abord modifier certaines valeurs dans `PCA9685.h` :
 
 | Servo-moteur | PCA_PRESCALER_FREQ (Hz) | PCA_PWM_MIN_TIME (ms) | PCA_PWM_MAX_TIME (ms) |
 | :----------- | :---------------------: | :-------------------: | :-------------------: |
-| Analogique   | 50Hz                    | 1.0                   | 2.0                   |
-| Numérique    | 125Hz                   | 0.5                   | 2.5                   |
-| Numérique    | 250Hz                   | 0.266                 | 0.533                 |
+| Analogique   |          50Hz           |          1.0          |          2.0          |
+| Numérique    |          125Hz          |          0.5          |          2.5          |
+| Numérique    |          250Hz          |         0.266         |         0.533         |
 
 Les comptes sont alors automatiquement calculés et stockés dans `PCA9685.h` :
 
 | Servo-moteur      | PCA_PWM_RANGE | PCA_PWM_MIN | PCA_PWM_MAX |
 | :---------------- | :-----------: | :---------: | :---------: |
-| Analogique        | 204           | 205         | 409         |
-| Numérique (125Hz) | 1024          | 256         | 1280        |
-| Numérique (250Hz) | 273           | 272         | 545         |
+| Analogique        |      204      |     205     |     409     |
+| Numérique (125Hz) |     1024      |     256     |    1280     |
+| Numérique (250Hz) |      273      |     272     |     545     |
 
 Après avoir initialisé la carte avec `PCA9685_init()`, on peut contrôler les sorties :
 

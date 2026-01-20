@@ -15,7 +15,7 @@ Pour importer la librairie CAN dans un projet STM32, il faut :
 
 > Pour mettre à jour la librairie, `git pull` dans le dossier cloné.
 
-### Configuration du bus
+## Configuration du bus
 
 La configuration du bus se fait dans le fichier `ioc` du projet STM32 :
 
@@ -23,12 +23,12 @@ La configuration du bus se fait dans le fichier `ioc` du projet STM32 :
 - Dans l'onglet `Pinout & Configuration`, sélectionner `CAN1` dans `Connectivity`
 - Cocher `Activated` dans `CAN1 Mode and Configuration`
 - Cocher toutes les interruptions dans `NVIC Settings`
-![Screenshot IOC](/images/CAN/IOC.webp)
+<img src="/images/CAN/IOC.webp" alt="Screenshot IOC">
 
 Les pins `CAN1_RX` et `CAN1_TX` sont configurées automatiquement (ici, `PA11` et `PA12`).
 Pour le baudrate, il est automatiquement calculé en fonction des paramètres dans `Bit Timings Parameters`. Ici, `22727 bit/s`.
 
-### Initialisation
+## Initialisation
 
 La fonction `CAN_AWAKENING` permet d'attribuer une adresse et d'initialiser le bus CAN :
 ```c
@@ -40,7 +40,7 @@ CANBUS_AWAKENING(&hcan1, CANBUS_ODOMETRIE);
 > Il faut placer cette fonction dans le main avant la boucle infinie et dans
 > une section `USER CODE` pour ne pas qu'elle soit écrasée lors de la génération
 
-### Envoyer des données
+## Envoyer des données
 
 La fonction `CAN_YEET` permet d'envoyer des données sur le bus CAN, par exemple :
 ```c
@@ -62,7 +62,7 @@ if (status != HAL_OK) {
 }
 ```
 
-### Recevoir des données
+## Recevoir des données
 
 Pour recevoir des données, il faut créer la fonction `HAL_CAN_RxFifo0MsgPendingCallback` qui sera automatiquement appelée à chaque trame reçue
 et utiliser `CAN_YOINK` pour récupérer les données :

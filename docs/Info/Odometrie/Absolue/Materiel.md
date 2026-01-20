@@ -6,15 +6,15 @@ description: Documentation sur le matériel
 # Matériel
 
 Matériel utilisé pour l'odométrie absolue
-  
-### Les Poteaux-Caméras
-  
+
+## Les Poteaux-Caméras
+
 Nous utilisons donc des caméras afin de pouvoir voir le plateau et faire la reconnaissance et l’estimation.
 
-Nous avons à notre disposition 3 poteaux fabriqués sur lesquels nous avons travaillé avec le pôle mécanique et le pôle électronique. 
+Nous avons à notre disposition 3 poteaux fabriqués sur lesquels nous avons travaillé avec le pôle mécanique et le pôle électronique.
 
 On retrouve dans ces poteaux une caméra qui se compose de différents éléments :
-  
+
 - une mini caméra
 - un câble caméra-raspi qui relie les deux
 - une carte Raspberry (faisant office de mini ordinateur)
@@ -22,15 +22,13 @@ On retrouve dans ces poteaux une caméra qui se compose de différents élément
 - une carte Xbee, pour communiquer avec d’autres cartes Xbee
 - un branchement HDMI pour voir les résultats sur un écran
 - un branchement pour l’alimentation par batterie
-  
-![Caméra Raspberry](/images/aruco/potoraspicamera.webp){:loading="lazy"}
-*Photo du haut du poteau avec la raspi-caméra*
+
+<img src="/images/aruco/potoraspicamera.webp" alt="Camera Raspberry">
+_Photo du haut du poteau avec la raspi-caméra_
 
 &nbsp;
 Un poteau-caméra est placée à un endroit du plateau et voit une partie de l’aire de jeu en fonction sa position.
-  
+
 Les 3 plateau-caméras sont positionnés à des endroits précis sur le plateau en fonction de l’équipe défini (jaune ou bleu). On a les caméras 1 et 2 qui sont placées du même côté et orientées vers l’intérieur du plateau, et la caméra 3 en face.
-
-![Poteaux-caméras sur plateau](/images/aruco/poteauxecranplateau.webp){:loading="lazy"}
-*Photo du plateau avec poteaux-caméras*
-
+<img src="/images/aruco/poteauxecranplateau.webp" alt="Poteaux-cameras sur plateau">
+_Photo du plateau avec poteaux-caméras_

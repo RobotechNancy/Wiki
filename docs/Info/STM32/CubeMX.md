@@ -6,7 +6,7 @@ description: Comment configurer une carte avec CubeMX
 # Configurer une carte
 
 Pour configurer une carte avec CubeMX, il suffit d'ouvrir le fichier `.ioc` :
-![CubeMX](/images/STM32/cubemx.webp)
+<img src="/images/STM32/cubemx.webp" alt="CubeMX">
 
 Chaque sauvegarde du fichier génère le code nécessaire à la bonne configuration de la carte (retrouvable dans `Core/Src/main.c` et `Core/Inc/main.h`).
 
