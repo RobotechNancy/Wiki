@@ -27,6 +27,7 @@ export default defineConfig({
       noExternal: ["vitepress-component-medium-zoom"],
     },
   },
+  base: "/Wiki/",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
 
