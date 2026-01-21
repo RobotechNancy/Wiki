@@ -132,7 +132,7 @@ export default defineConfig({
                 },
                 {
                   text: "Envoi de données",
-                  link: "/Info/CAN/Implementation/Envoir",
+                  link: "/Info/CAN/Implementation/Envoi",
                 },
               ],
             },
@@ -250,14 +250,32 @@ export default defineConfig({
         },
       ],
       "/Meca/": [
+        { text: "Outils", link: "/Meca/Outils" },
+        { text: "Exports Fusion360", link: "/Meca/Exports" },
+        {
+          text: "Fusion360",
+          items: [
+            { text: "Préparation dans Fusion360", link: "/Meca/Usinage/SetupFusion360" },
+          ]
+        },
         {
           text: "Usinage",
           items: [
-            { text: "Setup ProverXL 4030", link: "/Meca/Usinage/Setup" },
-            { text: "Usinage 2D", link: "/Meca/Usinage/Usinage2D" },
-            { text: "Usinage 3D", link: "/Meca/Usinage/Usinage3D" },
+            { text: "Préparation dans Fusion360", link: "/Meca/Usinage/SetupFusion360" },
+            { text: "Setup ProverXL 4030", link: "/Meca/Usinage/SetupCNC" },
+            { text: "Traitement usinage 2D", link: "/Meca/Usinage/Usinage2D" },
+            { text: "Traitement usinage 3D", link: "/Meca/Usinage/Usinage3D" },
           ]
-        }
+        },
+        {
+          text: "Impression 3D",
+          items: [
+            { text: "Préparation dans Fusion360", link: "/Meca/Impression3D/SetupFusion360" },
+            { text: "Setup ProverXL 4030", link: "/Meca/Impression3D/SetupCNC" },
+            { text: "Traitement usinage 2D", link: "/Meca/Impression3D/Usinage2D" },
+            { text: "Traitement usinage 3D", link: "/Meca/Impression3D/Usinage3D" },
+          ]
+        },
       ],
     },
   },

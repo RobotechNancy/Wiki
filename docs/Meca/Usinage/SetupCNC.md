@@ -1,4 +1,4 @@
-# Usinage3D
+# SetupCNC
 
 <!-- TODO: Add content for this page -->
 
