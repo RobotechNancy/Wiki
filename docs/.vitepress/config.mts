@@ -65,11 +65,15 @@ export default defineConfig({
       { text: "Home", link: "/" },
       { text: "Informatique", link: "/Info/" },
       { text: "Mecanique", link: "/Meca/" },
-      { text: "Contribuer", link: "/Contribuer/" },
+      { text: "Contribuer", link: "/Contribuer" },
     ],
 
     sidebar: {
       "/Info/": [
+        {
+          text: "Introduction",
+          link: "/Info/",
+        },
         {
           text: "Divers",
           collapsed: false,
@@ -90,7 +94,7 @@ export default defineConfig({
         },
         {
           text: "Build avec CMake",
-          collapsed: true,
+          collapsed: false,
           items: [
             { text: "Installer CMake", link: "/Info/CMake/Installation" },
             { text: "Créer un éxecutable", link: "/Info/CMake/Executable" },
@@ -100,7 +104,7 @@ export default defineConfig({
         },
         {
           text: "Projets STM32",
-          collapsed: true,
+          collapsed: false,
           items: [
             { text: "Installer", link: "/Info/STM32/Installation" },
             { text: "Créer un projet", link: "/Info/STM32/Projet" },
@@ -109,14 +113,14 @@ export default defineConfig({
         },
         {
           text: "Bus CAN",
-          collapsed: true,
+          collapsed: false,
           items: [
             { text: "Principe", link: "/Info/CAN/Principe" },
             { text: "Librairie Raspberry", link: "/Info/CAN/Raspberry" },
             { text: "Librairie STM32", link: "/Info/CAN/STM32" },
             {
               text: "Implémentation",
-              collapsed: false,
+              collapsed: true,
               items: [
                 {
                   text: "Format des trames",
@@ -140,13 +144,13 @@ export default defineConfig({
         },
         {
           text: "Modules XBee",
-          collapsed: true,
+          collapsed: false,
           items: [
             { text: "Principe", link: "/Info/XBee/Principe" },
             { text: "Utiliser la librairie", link: "/Info/XBee/Librairie" },
             {
               text: "Implémentation",
-              collapsed: false,
+              collapsed: true,
               items: [
                 {
                   text: "Format des trames",
@@ -170,7 +174,7 @@ export default defineConfig({
         },
         {
           text: "Odométrie",
-          collapsed: true,
+          collapsed: false,
           items: [
             {
               text: "Présentation Odométrie",
@@ -178,7 +182,7 @@ export default defineConfig({
             },
             {
               text: "Odométrie Absolue",
-              collapsed: false,
+              collapsed: true,
               items: [
                 {
                   text: "Présentation générale",
@@ -216,7 +220,7 @@ export default defineConfig({
             },
             {
               text: "Odométrie Relative",
-              collapsed: false,
+              collapsed: true,
               items: [
                 {
                   text: "Capteur optique",
@@ -229,12 +233,12 @@ export default defineConfig({
         },
         {
           text: "Signaux PWM",
-          collapsed: true,
+          collapsed: false,
           items: [
             { text: "STM32", link: "/Info/PWM/STM32" },
             {
               text: "PCA9685",
-              collapsed: false,
+              collapsed: true,
               items: [
                 {
                   text: "Utiliser la librairie",
@@ -250,31 +254,44 @@ export default defineConfig({
         },
       ],
       "/Meca/": [
-        { text: "Outils", link: "/Meca/Outils" },
-        { text: "Exports Fusion360", link: "/Meca/Exports" },
+        { text: "Introduction", link: "/Meca/" },
+        {
+          text: "Divers",
+          collapsed: false,
+          items: [
+            { text: "Outils", link: "/Meca/Outils" },
+            { text: "Exports Fusion360", link: "/Meca/Exports" },
+          ],
+        },
         {
           text: "Fusion360",
-          items: [
-            { text: "Préparation dans Fusion360", link: "/Meca/Usinage/SetupFusion360" },
-          ]
+          collapsed: false,
+          items: [{ text: "Bonnes pratiques", link: "/Meca/BonnesPratiques" }],
         },
         {
           text: "Usinage",
+          collapsed: false,
           items: [
-            { text: "Préparation dans Fusion360", link: "/Meca/Usinage/SetupFusion360" },
+            {
+              text: "Préparation dans Fusion360",
+              link: "/Meca/Usinage/SetupFusion360",
+            },
+            { text: "Installation Candle", link: "/Meca/Usinage/SetupCandle" },
             { text: "Setup ProverXL 4030", link: "/Meca/Usinage/SetupCNC" },
             { text: "Traitement usinage 2D", link: "/Meca/Usinage/Usinage2D" },
             { text: "Traitement usinage 3D", link: "/Meca/Usinage/Usinage3D" },
-          ]
+          ],
         },
         {
           text: "Impression 3D",
+          collapsed: false,
           items: [
-            { text: "Préparation dans Fusion360", link: "/Meca/Impression3D/SetupFusion360" },
-            { text: "Setup ProverXL 4030", link: "/Meca/Impression3D/SetupCNC" },
-            { text: "Traitement usinage 2D", link: "/Meca/Impression3D/Usinage2D" },
-            { text: "Traitement usinage 3D", link: "/Meca/Impression3D/Usinage3D" },
-          ]
+            {
+              text: "Préparation dans Fusion360",
+              link: "/Meca/Impression3D/SetupFusion360",
+            },
+            { text: "Slicer", link: "/Meca/Impression3D/Slicer" },
+          ],
         },
       ],
     },

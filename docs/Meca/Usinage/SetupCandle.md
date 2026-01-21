@@ -1,4 +1,4 @@
-# SetupCNC
+# SetupCandle
 
 <!-- TODO: Add content for this page -->
 

@@ -1,4 +1,4 @@
-# Usinage3D
+# Slicer
 
 <!-- TODO: Add content for this page -->
 

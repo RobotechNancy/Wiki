@@ -1,4 +1,4 @@
-# Usinage2D
+# BonnesPratiques
 
 <!-- TODO: Add content for this page -->
 
