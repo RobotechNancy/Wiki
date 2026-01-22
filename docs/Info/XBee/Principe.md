@@ -9,16 +9,16 @@ Ces modules permettent une communication fiable et sécurisée, même dans un en
 Les modules XBee permettent la communication sans fil entre de multiples appareils.
 
 Ici, les modules utilisés sont des [XBee S1 Pro](https://www.digi.com/resources/documentation/digidocs/pdfs/90000982.pdf) (alimentés en 3.3V) :
-<img src="/images/XBee/S1_pro.webp" alt="XBee S1 Pro">
+<img src="/images/Info/XBee/S1_pro.webp" alt="XBee S1 Pro">
 
 Les modules communiquent en [UART](https://fr.wikipedia.org/wiki/UART) avec leur microcontrôleur respectif et suivant le protocole [IEEE 802.15.4](https://fr.wikipedia.org/wiki/IEEE_802.15.4) (2.4GHz) entre eux :
-<img src="/images/XBee/schema.webp" alt="XBee et Raspberry Pi">
+<img src="/images/Info/XBee/schema.webp" alt="XBee et Raspberry Pi">
 
 ## Configuration
 
 Les modules ne peuvent communiquer qu'avec d'autres modules du même type et configurés de la même manière.
 De plus, il n'y a que deux manières de communiquer : point à point et point à multipoint :
-<img src="/images/XBee/protocol.webp" alt="IEEE 802.15.4">
+<img src="/images/Info/XBee/protocol.webp" alt="IEEE 802.15.4">
 
 Pour configurer les adresses des modules, il faut envoyer des commandes AT :
 

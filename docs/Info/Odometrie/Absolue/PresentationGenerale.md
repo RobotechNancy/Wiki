@@ -6,7 +6,7 @@ description: Documentation sur l'utilisation de l'odométrie absolue
 # Présentation générale
 
 Des tags ArUCO (en rouge) sont placés sur le plateau et les éléments de jeu. Pour situer ces tags, des modules sont placés sur des balises (en bleu ou jaune) :
-<img src="/images/aruco/playground.webp" alt="Terrain de jeu">
+<img src="/images/Info/aruco/playground.webp" alt="Terrain de jeu">
 
 _Plateau de jeu 2024_
 
@@ -61,4 +61,4 @@ Les paramètres sont repris de `data/camera_params.yml` et `data/config.yml` et 
 
 | ArUCO Estimation                                  | ArUCO AR               |
 | -------------------------------------------------- | ---------------------------------- |
-| <img src="/images/aruco/estimation.webp" alt="ArUCO Estimation"> | <img src="/images/aruco/AR.webp" alt="ArUCO AR"> |
+| <img src="/images/Info/aruco/estimation.webp" alt="ArUCO Estimation"> | <img src="/images/Info/aruco/AR.webp" alt="ArUCO AR"> |

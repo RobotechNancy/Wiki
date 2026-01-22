@@ -7,7 +7,7 @@ description: Comment lier des librairies externes à un projet CMake
 
 Lier des librairies permet de facilement réutiliser du code existant dans plusieurs projets.
 Il est important de comprendre que si la librairie a été installée (`sudo make install`), il faudra la réinstaller à chaque modification :
-<img src="/images/CMake.webp" alt="Lier des librairies">
+<img src="/images/Info/CMake.webp" alt="Lier des librairies">
 
 ## Librairies standard et Robotech
 

@@ -23,7 +23,7 @@ La configuration du bus se fait dans le fichier `ioc` du projet STM32 :
 - Dans l'onglet `Pinout & Configuration`, sélectionner `CAN1` dans `Connectivity`
 - Cocher `Activated` dans `CAN1 Mode and Configuration`
 - Cocher toutes les interruptions dans `NVIC Settings`
-<img src="/images/CAN/IOC.webp" alt="Screenshot IOC">
+<img src="/images/Info/CAN/IOC.webp" alt="Screenshot IOC">
 
 Les pins `CAN1_RX` et `CAN1_TX` sont configurées automatiquement (ici, `PA11` et `PA12`).
 Pour le baudrate, il est automatiquement calculé en fonction des paramètres dans `Bit Timings Parameters`. Ici, `22727 bit/s`.

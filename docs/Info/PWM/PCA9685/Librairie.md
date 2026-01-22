@@ -6,7 +6,7 @@ description: Comment utiliser la librairie custom pour générer jusqu'à 16 sig
 # Utiliser la librairie
 
 La carte PCA9685 permet de contrôler jusqu'à 16 sorties [PWM](/Info/PWM/STM32) par I2C :
-<img src="/images/PWM/PCA9685.webp" alt="PCA965">
+<img src="/images/Info/PWM/PCA9685.webp" alt="PCA965">
 
 ## Initialisation
 

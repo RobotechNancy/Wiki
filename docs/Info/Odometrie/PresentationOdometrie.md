@@ -9,7 +9,7 @@ L'odométrie est une technique utilisée pour pouvoir estimer la position d'un o
 L'objet bouge dans une zone et l'odométrie permet d'obtenir sa position le plus précisément possible selon la situation et l'équpement.
 
 Dans notre cas, nous voulons estimer la position du robot dans l'air de jeu avec l'odométrie.
-<img src="/images/aruco/robotplateau.webp" alt="Robot sur le plateau de jeu">
+<img src="/images/Info/aruco/robotplateau.webp" alt="Robot sur le plateau de jeu">
 
 _Photo du plateau de jeu avec vieille base robot_
 
@@ -30,4 +30,4 @@ On utilise en particulier des capteurs externes et des marqueurs visuels pour es
 
 Dans notre cas, nous utilisons 3 caméras mis sur des poteaux qui sont placés autour du plateau. Ces derniers fonctionnent en reconnaissant des codes ArUCO pour ensuite estimer les distances et finalement communiquer les coordonnées de chaque code dans le repère du plateau au robot, par le biais d'Xbee.
 
-<img src="/images/aruco/odometrieabsoluecam.webp" alt="Schema localisation robot par cameras">
+<img src="/images/Info/aruco/odometrieabsoluecam.webp" alt="Schema localisation robot par cameras">

@@ -23,7 +23,7 @@ On retrouve dans ces poteaux une caméra qui se compose de différents élément
 - un branchement HDMI pour voir les résultats sur un écran
 - un branchement pour l’alimentation par batterie
 
-<img src="/images/aruco/potoraspicamera.webp" alt="Camera Raspberry">
+<img src="/images/Info/aruco/potoraspicamera.webp" alt="Camera Raspberry">
 
 _Photo du haut du poteau avec la raspi-caméra_
 
@@ -31,6 +31,6 @@ _Photo du haut du poteau avec la raspi-caméra_
 Un poteau-caméra est placée à un endroit du plateau et voit une partie de l’aire de jeu en fonction sa position.
 
 Les 3 plateau-caméras sont positionnés à des endroits précis sur le plateau en fonction de l’équipe défini (jaune ou bleu). On a les caméras 1 et 2 qui sont placées du même côté et orientées vers l’intérieur du plateau, et la caméra 3 en face.
-<img src="/images/aruco/poteauxecranplateau.webp" alt="Poteaux-cameras sur plateau">
+<img src="/images/Info/aruco/poteauxecranplateau.webp" alt="Poteaux-cameras sur plateau">
 
 _Photo du plateau avec poteaux-caméras_
