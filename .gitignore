@@ -2,5 +2,6 @@
 **/cache
 **/dist
 
-**/.vscode
-**/.idea
+.idea
+.vscode/*
+!.vscode/tasks.json
