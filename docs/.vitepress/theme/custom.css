@@ -4,8 +4,16 @@
 }
 
 img:not(.logo) {
-    display: block;
-    margin: 10px;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &[left] {
+    margin-left: 0;
+  }
+
+  &[right] {
+    margin-right: 0;
+  }
 }
