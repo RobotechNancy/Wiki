@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+import markdownItSup from "markdown-it-sup";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -18,6 +19,9 @@ export default defineConfig({
     hostname: "https://robotechnancy.github.io/Wiki",
   },
   markdown: {
+    config(md) {
+      md.use(markdownItSup);
+    },
     image: {
       lazyLoading: true,
     },

@@ -10,6 +10,7 @@
     "gen": "node generate-pages.mjs"
   },
   "dependencies": {
+    "markdown-it-sup": "^2.0.0",
     "medium-zoom": "^1.1.0",
     "vitepress-component-medium-zoom": "^1.1.1"
   }

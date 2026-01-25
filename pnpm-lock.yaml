@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      markdown-it-sup:
+        specifier: ^2.0.0
+        version: 2.0.0
       medium-zoom:
         specifier: ^1.1.0
         version: 1.1.0
@@ -738,6 +741,9 @@ packages:
 
   mark.js@8.11.1:
     resolution: {integrity: sha512-1I+1qpDt4idfgLQG+BNWmrqku+7/2bi5nLf4YwF8y8zXvmfiTBY3PV3ZibfrjBueCByROpuBjLLFCajqkgYoLQ==}
+
+  markdown-it-sup@2.0.0:
+    resolution: {integrity: sha512-5VgmdKlkBd8sgXuoDoxMpiU+BiEt3I49GItBzzw7Mxq9CxvnhE/k09HFli09zgfFDRixDQDfDxi0mgBCXtaTvA==}
 
   marked@16.4.2:
     resolution: {integrity: sha512-TI3V8YYWvkVf3KJe1dRkpnjs68JUPyEa5vjKrp1XEEJUAOaQc+Qj+L1qWbPd0SJuAdQkFU0h73sXXqwDYxsiDA==}
@@ -1628,6 +1634,8 @@ snapshots:
       '@jridgewell/sourcemap-codec': 1.5.5
 
   mark.js@8.11.1: {}
+
+  markdown-it-sup@2.0.0: {}
 
   marked@16.4.2: {}
 
