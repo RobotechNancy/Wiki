@@ -6,6 +6,8 @@ export default defineConfig({
   title: "Robotech Wiki",
   description: "Un wiki pour rassembler tout le savoir de Robotech",
   cleanUrls: true,
+  base: "/Wiki/",
+
   head: [
     [
       "link",
@@ -15,9 +17,11 @@ export default defineConfig({
       },
     ],
   ],
+
   sitemap: {
     hostname: "https://robotechnancy.github.io/Wiki",
   },
+
   markdown: {
     config(md) {
       md.use(markdownItSup);
@@ -26,21 +30,23 @@ export default defineConfig({
       lazyLoading: true,
     },
   },
+
   vite: {
     ssr: {
       noExternal: ["vitepress-component-medium-zoom"],
     },
   },
-  base: "/Wiki/",
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-
     footer: {
-      copyright: "Copyright © 2019-2025 Gabriel Mouchette",
+      copyright: "Copyright © 2019-2025 Contributeurs du wiki Robotech Nancy",
     },
+
     editLink: {
       pattern: "https://github.com/RobotechNancy/Wiki/edit/master/docs/:path",
     },
+
     lastUpdated: {
       text: "Updated at",
       formatOptions: {
@@ -49,12 +55,14 @@ export default defineConfig({
         hour12: false,
       },
     },
+
     search: {
       provider: "local",
       options: {
         detailedView: true,
       },
     },
+
     logo: "/favicon.webp",
     externalLinkIcon: true,
 
@@ -69,7 +77,13 @@ export default defineConfig({
       { text: "Home", link: "/" },
       { text: "Informatique", link: "/Info/" },
       { text: "Mecanique", link: "/Meca/" },
-      { text: "Contribuer", link: "/Contribuer" },
+      {
+        text: "Contribuer",
+        items: [
+          { text: "Contribuer", link: "/Contribuer/" },
+          { text: "Crédits", link: "/Contribuer/Credits" },
+        ],
+      },
     ],
 
     sidebar: {
@@ -263,14 +277,23 @@ export default defineConfig({
           text: "Divers",
           collapsed: false,
           items: [
-            { text: "Outils", link: "/Meca/Outils" },
-            { text: "Exports Fusion360", link: "/Meca/Exports" },
+            { text: "Outils", link: "/Meca/Divers/Outils" },
+            { text: "Exports Fusion360", link: "/Meca/Divers/Exports" },
+            {
+              text: "Commandes par défaut",
+              link: "/Meca/Divers/CommandesParDefaut",
+            },
           ],
         },
         {
           text: "Fusion360",
           collapsed: false,
-          items: [{ text: "Bonnes pratiques", link: "/Meca/BonnesPratiques" }],
+          items: [
+            {
+              text: "Bonnes pratiques",
+              link: "/Meca/Fusion360/BonnesPratiques",
+            },
+          ],
         },
         {
           text: "Usinage",
@@ -280,8 +303,24 @@ export default defineConfig({
               text: "Préparation dans Fusion360",
               link: "/Meca/Usinage/SetupFusion360",
             },
-            { text: "Installation Candle", link: "/Meca/Usinage/SetupCandle" },
-            { text: "Setup ProverXL 4030", link: "/Meca/Usinage/SetupCNC" },
+            {
+              text: "Setup ProverXL 4030",
+              collapsed: true,
+              items: [
+                {
+                  text: "Installation logicielle",
+                  link: "/Meca/Usinage/ProverXL4030/Installation",
+                },
+                {
+                  text: "Paramétrage de Candle",
+                  link: "/Meca/Usinage/ProverXL4030/Parametrage",
+                },
+                {
+                  text: "Calibrage machine",
+                  link: "/Meca/Usinage/ProverXL4030/Calibrage",
+                },
+              ],
+            },
             { text: "Traitement usinage 2D", link: "/Meca/Usinage/Usinage2D" },
             { text: "Traitement usinage 3D", link: "/Meca/Usinage/Usinage3D" },
           ],

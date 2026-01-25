@@ -1,4 +1,4 @@
-# Exports
+# Bonnes pratiques
 
 <!-- TODO: Add content for this page -->
 

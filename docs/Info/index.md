@@ -15,4 +15,3 @@ Le wiki couvre les sujets suivants :
 - Fonctionnement des différents composants/matériels
 - Utilisation des différentes librairies custom
 - Le fonctionnement et l'utilisation de l'odométrie
-- Comment modifier ce wiki

@@ -5,7 +5,7 @@ description: Comment créer un exécutable avec CMake
 
 # Créer un exécutable
 
-Pour créer un exécutable avec CMake, il faut créer un fichier `CMakeLists.txt` à la racine du projet. Ce fichier contient les instructions pour créer un exécutable à partir des fichiers sources :
+Pour créer un exécutable avec CMake, il faut créer un fichier `CMakeLists.txt` à la racine du projet. Ce fichier contient les instructions pour créer un exécutable à partir des fichiers sources&nbsp;:
 
 ```cmake
 cmake_minimum_required(VERSION 3.x)       # Version de cmake
@@ -15,7 +15,7 @@ project(my_project)                       # Nom du projet
 add_executable(${PROJECT_NAME} main.cpp)  # Créer un exécutable du même nom que le projet
 ```
 
-Pour compiler le projet, il faut créer un dossier où seront stockés les fichiers de compilation :
+Pour compiler le projet, il faut créer un dossier où seront stockés les fichiers de compilation&nbsp;:
 
 ```bash
 mkdir build && cd build
@@ -30,7 +30,7 @@ make      # Compile le projet
 > [!WARNING]
 > Pour éviter les erreurs, il faut inclure **tous** les fichiers source dans `add_executable`
 
-Optionnellement, pour les fichiers source, il est possible d'éviter les chemins relatifs pour inclure les headers :
+Optionnellement, pour les fichiers source, il est possible d'éviter les chemins relatifs pour inclure les headers&nbsp;:
 
 - Dans le fichier `CMakeLists.txt` :
 
