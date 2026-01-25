@@ -31,7 +31,7 @@ function downloadURI(uri, name) {
   padding: 20px;
   margin: 15px 0;
   color: var(--vp-c-brand-1);
-  font-size: large;
+  font-size: medium;
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
   transition: border-color 0.25s;
