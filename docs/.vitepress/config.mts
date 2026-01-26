@@ -18,6 +18,11 @@ export default defineConfig({
     ],
   ],
 
+  ignoreDeadLinks: [
+    // ignore all localhost links
+    /^https?:\/\/localhost/,
+  ],
+
   sitemap: {
     hostname: "https://robotechnancy.github.io/Wiki",
   },
