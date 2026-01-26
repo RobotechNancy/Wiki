@@ -1,48 +1,47 @@
 # Modifier ce wiki
 
-::: danger
-Attention, cette page est obsolète
-Le Wiki utilise désormais [VitePress](https://vitepress.dev/)
-:::
+Ce wiki utilise [`VitePress`](https://vitepress.dev/) pour générer des pages statiques à partir de fichiers markdown. Le gestionnaire de paquet utilisé est [`pnpm`](https://pnpm.io/)
 
-Ce wiki utilise [`markdown_spa`](https://github.com/MrSpaar/markdown_spa) pour générer des pages statiques à partir de fichiers markdown :
+## Premier démarrage
 
-- Installer `markdown_spa` : `pip install markdown_spa`
-- Cloner le wiki : `git clone https://github.com/RobotechNancy/Wiki.git`
+- Cloner ce wiki : `git clone https://github.com/RobotechNancy/Wiki.git`
+- Installer les paquets nécéssaires : `pnpm install`
+- Lancer le serveur live : `pnpm run dev`
+- Ouvrir un navigateur web à [`http://localhost:5173/Wiki/`](http://localhost:5173/Wiki/)
+
+## Ajout d'une page
+
+- Ouvrir [`config.mts`](https://github.com/RobotechNancy/Wiki/edit/master/docs/.vitepress/config.mts)
+- Ajouter une page à l'emplacement voulu dans l'objet `sidebar`
+- Executer la commande `pnpm run gen` afin de générer la page ajoutée
+- Ouvrir le / les fichiers générés aux emplacements concernés
+
+## Visual Studio Code
+
+Si vous utilisez [VSCode](https://code.visualstudio.com/), vous pouvez utiliser la commande de build en appuyant sur F1 et en tappant "Tasks: Run Build Task" ou sur le raccourci clavier prévu à cet effet
+
+## Structure
 
 Ce wiki suit la structure suivante :
+
 ```bash
 .
-├── config.ini            # Configuration markdown_spa
-├── generated/            # Site final généré
-├── pages/                # Pages du wiki
-├── scss/
-│   ├── _layout.scss      # Layout du site
-│   ├── _normalize.scss   # Reset CSS
-│   ├── _tables.scss      # Style des tableaux
-│   ├── _typography.scss  # Style du texte
-│   ├── code_dark.css     # Thème sombre pour les blocs de code
-│   ├── code_light.css    # Thème clair pour les blocs de code
-│   └── main.scss         # Fichier principal
-├── static/
-│   ├── images/           # Dossier contenant les images
-│   └── script.js         # Navigation et intéractions
-└── templates/
-    ├── base.html         # Base de toutes les pages
-    └── nav.html          # Barre de navigation
+├── .vscode/tasks.json      # Contient les commandes VSCode
+├── .github/workflows/      # Contient le script de déploiement sur Github
+├── docs/                   # Le dossier de base de VitePress
+│   ├── .vitepress/         # Toutes les configurations
+│   │   ├── theme/          # Configuration du theme et du layout du Wiki
+│   │   ├── dist/           # Dossier non uploadé sur Github contenant le site compilé
+│   │   └── config.mts      # Fichier principal du site
+│   ├── images/             # Contient les images du site
+│   ├── public/             # Contient tous les fichiers accessibles depuis le site
+│   ├── **/                 # Tout autre fichier markdwon contenant une page
+│   └── index.md            # Accueil du site
+├── node_modules/           # Dossier des modules JavaScript
+├── .gitignore              # Liste des fichiers ignorés par Github
+├── .prettierrc             # Configuration du formattage
+├── generate-pages.mjs      # Script qui génère les fichiers markdown
+├── package.json            # Fichier de configuration Node
+├── pnpm-lock.yaml          # Liste des packets Node figés
+└── README.md               # Fichier d'information
 ```
-
-Pour modifier le contenu du wiki, il suffit de modifier les fichiers markdown dans le dossier `pages`.
-Si vous voulez ajouter une page, il faut obligatoirement spécifier trois métadonnées en haut du fichier :
-```markdown
----
-title: Titre de la page
-description: Description de la page
----```
-
-Pendant le développement, deux commandes sont utiles :
-
-- `markdown_spa watch` : serveur avec auto-reload à chaque modification
-- `markdown_spa build` : génère le site (en cas d'erreur avec `watch` par exemple)
-
-Pour plus d'informations, voir la [documentation de `markdown_spa`](https://mrspaar.github.io/markdown_spa/).
