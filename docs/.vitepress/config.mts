@@ -81,6 +81,7 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/" },
       { text: "Informatique", link: "/Info/" },
+      { text: "Electronique", link: "/Elec/" },
       { text: "Mecanique", link: "/Meca/" },
       {
         text: "Contribuer",
@@ -339,6 +340,26 @@ export default defineConfig({
               link: "/Meca/Impression3D/SetupFusion360",
             },
             { text: "Slicer", link: "/Meca/Impression3D/Slicer" },
+          ],
+        },
+      ],
+      "/Elec/": [
+        { text: "Introduction", link: "/Elec/" },
+        {
+          text: "Divers",
+          items: [
+            { text: "Checklist PCB", link: "/Elec/ChecklistPCB" },
+            { text: "Connecteurs Mini-Micro Fit", link: "/Elec/Connecteurs" }
+          ],
+        },
+        {
+          text: "KiCAD",
+          collapsed: false,
+          items: [
+            { text: "Présentation", link: "/Elec/KiCAD/Presentation" },
+            { text: "Interface", link: "/Elec/KiCAD/Interface" },
+            { text: "Raccourcis", link: "/Elec/KiCAD/Raccourcis" },
+            { text: "Liens utiles", link: "/Elec/KiCAD/LiensUtiles" },
           ],
         },
       ],
