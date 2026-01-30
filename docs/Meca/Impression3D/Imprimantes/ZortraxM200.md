@@ -1,5 +1,6 @@
 # ZortraxM200
 
-<!-- TODO: Add content for this page -->
+<img src="/images/Meca/Impression3D/Printers/ZortraxM200.png" width="33%" class="no-shadow" />
 
-This page is under construction.
+
+[Repair it yourself - Zortrax M200](https://support.zortrax.com/repair-it-by-yourself/?printers=m200)
