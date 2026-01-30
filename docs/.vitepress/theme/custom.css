@@ -38,4 +38,8 @@ img.medium-zoom-image {
   &:hover {
     box-shadow: 0px 2px 10px rgba(30, 30, 30, 0.5);
   }
+
+  &.no-shadow {
+    box-shadow: none;
+  }
 }
