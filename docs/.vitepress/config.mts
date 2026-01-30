@@ -34,6 +34,16 @@ export default defineConfig({
     image: {
       lazyLoading: true,
     },
+    container: {
+      infoLabel: "NOTE", // Grey
+      noteLabel: "NOTE", // Grey
+      detailsLabel: "DETAILS", // Grey - collapsed
+      tipLabel: "NOTE", // Blue
+      importantLabel: "IMPORTANT", // Purple
+      warningLabel: "ATTENTION", // Yellow
+      cautionLabel: "DANGER", // Red
+      dangerLabel: "DANGER", // Red
+    },
   },
 
   vite: {
