@@ -1,6 +1,10 @@
 <script setup>
 const props = defineProps(["src", "alt", "showAlt", "width", "height"]);
+
 const showAlt = props.showAlt;
+
+let width = props.width;
+let height = props.height;
 
 let src = "/Wiki" + props.src;
 </script>
@@ -11,8 +15,8 @@ let src = "/Wiki" + props.src;
       class="with-label"
       :src="src"
       :alt="props.alt"
-      :width="props.width"
-      :height="props.height"
+      :width="width"
+      :height="height"
     />
     <p class="alt-text">{{ props.alt }}</p>
   </div>
@@ -20,8 +24,8 @@ let src = "/Wiki" + props.src;
     v-else
     :src="src"
     :alt="props.alt"
-    :width="props.width"
-    :height="props.height"
+    :width="width"
+    :height="height"
   />
 </template>
 
