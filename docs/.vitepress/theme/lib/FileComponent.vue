@@ -1,8 +1,8 @@
 <script setup>
-const props = defineProps(["path"]);
+const props = defineProps(["src"]);
 
-let path = props.path;
-const fileName = path.match(/.*\/(.*)/)[1];
+let src = props.src;
+const fileName = src.match(/.*\/(.*)/)[1];
 
 function downloadURI(uri, name) {
   var link = document.createElement("a");
@@ -16,10 +16,10 @@ function downloadURI(uri, name) {
 </script>
 
 <template>
-  <button class="file-container" @click="downloadURI(path, fileName)">
+  <button class="file-container" @click="downloadURI(src, fileName)">
     <div class="flex">
       <slot></slot>
-      <p>{{ path }}</p>
+      <p>{{ src }}</p>
     </div>
     <span class="block">
       <span class="download-icon"></span>
