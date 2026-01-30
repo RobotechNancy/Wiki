@@ -72,6 +72,14 @@ const members = [
     ]
   },
   {
+    avatar: 'https://github.com/ghost.png',
+    name: 'mawa2005',
+    title: 'Contributeur',
+    // links: [
+      // { icon: 'github', link: '' },
+    // ]
+  },
+  {
     avatar: 'https://www.github.com/NoAccount1.png',
     name: 'MouaMem2',
     title: 'Contributeur',
