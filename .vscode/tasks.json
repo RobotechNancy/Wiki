@@ -17,6 +17,21 @@
       }
     },
     {
+      "label": "Build project",
+      "command": "if [ -f \"$(which pnpm)\" ]; then pnpm run build; else npm run build; fi && cd docs/.vitepress/dist && mkdir Wiki && mv * Wiki && python -m http.server",
+      "type": "shell",
+      "group": "build",
+      "detail": "vitepress build docs",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "dedicated",
+        "showReuseMessage": true,
+        "clear": true
+      }
+    },
+    {
       "label": "Generate tree",
       "command": "if [ -f \"$(which pnpm)\" ]; then pnpm run gen; else npm run gen; fi",
       "type": "shell",
