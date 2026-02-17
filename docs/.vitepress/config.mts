@@ -250,6 +250,7 @@ export default defineConfig({
                   ],
                 },
                 { text: "Liens", link: "/Info/Odometrie/Absolue/Liens" },
+                { text: "LiDAR", link: "/Info/Odometrie/Absolue/LiDAR" }
               ],
             },
             {

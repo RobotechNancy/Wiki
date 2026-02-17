@@ -4,6 +4,10 @@ contributor: NoAccount1
 ---
 
 # Creality CR-10S Pro
+> [!DANGER] ⚠️ ATTENTION ⚠️
+> Après plusieurs essais infructeux, il est recommandé d'utiliser [BambuStudio](https://github.com/bambulab/BambuStudio/releases) plutôt que Cura
+>
+> Les démarches sont relativement semblables
 
 Ce tutoriel détaille l'**utilisation de la Creality CR-10S Pro** à l'aide de Cura et le **changement de bobines**
 
@@ -19,7 +23,8 @@ Ce tutoriel ne concerne pas ces slicers, mais ils fonctionnent aussi si vous sav
 - [Creality Print](https://www.creality.com/download)
 - [PrusaSlicer](https://github.com/prusa3d/PrusaSlicer/releases)
 - [OrcaSlicer](https://github.com/OrcaSlicer/orcaslicer/releases)
-  :::
+- [BambuStudio](https://github.com/bambulab/BambuStudio/releases)
+:::
 
 ## Ajouter une imprimante
 
