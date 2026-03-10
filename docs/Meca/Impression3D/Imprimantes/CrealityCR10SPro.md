@@ -5,9 +5,9 @@ contributor: NoAccount1
 
 # Creality CR-10S Pro
 > [!DANGER] ⚠️ ATTENTION ⚠️
-> Après plusieurs essais infructeux, il est recommandé d'utiliser [BambuStudio](https://github.com/bambulab/BambuStudio/releases) plutôt que Cura
+> Après plusieurs essais infructeux avec Cura, il est recommandé d'utiliser [BambuStudio](https://github.com/bambulab/BambuStudio/releases)
 >
-> Les démarches sont relativement semblables
+> Les démarches sont relativement semblables, en cas de besoin, contacter `@ch4ntal_` sur Discord
 
 Ce tutoriel détaille l'**utilisation de la Creality CR-10S Pro** à l'aide de Cura et le **changement de bobines**
 
