@@ -9,7 +9,10 @@ contributor: NoAccount1
 >
 > Les démarches sont relativement semblables, en cas de besoin, contacter `@ch4ntal_` sur Discord
 
-Ce tutoriel détaille l'**utilisation de la Creality CR-10S Pro** à l'aide de Cura et le **changement de bobines**
+> [!caution] ⚠️ ATTENTION ⚠️
+> Après vérification, les paramètres par défaut de Bambu Studio sont bien mieux adaptés à la Creality CR-10S Pro que ceux de Cura
+
+Ce tutoriel détaille l'**utilisation de la Creality CR-10S Pro** à l'aide de **Cura** et le **changement de bobines**
 
 Dans ce tutoriel nous vous expliquerons comment est-il possible de lancer des impressions à l’aide de l’imprimante Creality CR10S-pro ainsi que comment changer la bobine.
 
@@ -23,7 +26,8 @@ Ce tutoriel ne concerne pas ces slicers, mais ils fonctionnent aussi si vous sav
 - [Creality Print](https://www.creality.com/download)
 - [PrusaSlicer](https://github.com/prusa3d/PrusaSlicer/releases)
 - [OrcaSlicer](https://github.com/OrcaSlicer/orcaslicer/releases)
-- [BambuStudio](https://github.com/bambulab/BambuStudio/releases)
+- [Bambu Studio](https://bambulab.com/en/download/studio)
+
 :::
 
 ## Ajouter une imprimante
@@ -35,7 +39,7 @@ Sélectionner `Non UltiMaker printer`
 
 <Image src="/images/Meca/Impression3D/Cura_AddPrinter.png" alt="Ajouter une imprimante non-Ultimaker" showAlt="true" width="75%" />
 
-Clicker sur `Add a non-network printer` et chercher `Creality CR1-0S Pro`
+Clicker sur `Add a non-network printer` et chercher `Creality CR-10S Pro`
 
 <Image src="/images/Meca/Impression3D/Cura_AddPrinterSearch.png" alt="Chercher Creality CR-10S Pro" showAlt="true" width="75%" />
 

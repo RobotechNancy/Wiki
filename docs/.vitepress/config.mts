@@ -104,11 +104,11 @@ export default defineConfig({
 
     sidebar: {
       "/Info/": [
-        { // Introduction
+        {
           text: "Introduction",
           link: "/Info/",
         },
-        { // Divers
+        {
           text: "Divers",
           collapsed: false,
           items: [
@@ -126,7 +126,7 @@ export default defineConfig({
             },
           ],
         },
-        { // Build avec CMake
+        {
           text: "Build avec CMake",
           collapsed: false,
           items: [
@@ -136,7 +136,7 @@ export default defineConfig({
             { text: "Créer une librairie", link: "/Info/CMake/Librairie" },
           ],
         },
-        { // Projets STM32
+        {
           text: "Projets STM32",
           collapsed: false,
           items: [
@@ -145,7 +145,7 @@ export default defineConfig({
             { text: "Configurer une carte", link: "/Info/STM32/CubeMX" },
           ],
         },
-        { // Bus CAN
+        {
           text: "Bus CAN",
           collapsed: false,
           items: [
@@ -176,7 +176,7 @@ export default defineConfig({
             },
           ],
         },
-        { // Modules XBee
+        {
           text: "Modules XBee",
           collapsed: false,
           items: [
@@ -206,7 +206,7 @@ export default defineConfig({
             },
           ],
         },
-        { // Odométrie
+        {
           text: "Odométrie",
           collapsed: false,
           items: [
@@ -266,7 +266,7 @@ export default defineConfig({
             },
           ],
         },
-        { // Signaux PWM
+        {
           text: "Signaux PWM",
           collapsed: false,
           items: [
@@ -290,7 +290,7 @@ export default defineConfig({
       ],
       "/Meca/": [
         { text: "Introduction", link: "/Meca/" },
-        { // Divers
+        {
           text: "Divers",
           collapsed: false,
           items: [
@@ -302,7 +302,7 @@ export default defineConfig({
             },
           ],
         },
-        { // Fusion360
+        {
           text: "Fusion360",
           collapsed: false,
           items: [
@@ -312,7 +312,7 @@ export default defineConfig({
             },
           ],
         },
-        { // Usinage
+        {
           text: "Usinage",
           collapsed: false,
           items: [
@@ -321,7 +321,7 @@ export default defineConfig({
               link: "/Meca/Usinage/SetupFusion360",
             },
             {
-              text: "Setup ProverXL 4030",
+              text: "Utilisation CNC",
               collapsed: true,
               items: [
                 {
@@ -342,7 +342,7 @@ export default defineConfig({
             { text: "Traitement usinage 3D", link: "/Meca/Usinage/Usinage3D" },
           ],
         },
-        { // Impression 3D
+        {
           text: "Impression 3D",
           collapsed: false,
           items: [
@@ -350,38 +350,31 @@ export default defineConfig({
               text: "Préparation dans Fusion360",
               link: "/Meca/Impression3D/SetupFusion360",
             },
-            { text: "Slicer", link: "/Meca/Impression3D/Slicer" },
             {
-              text: "Imprimantes",
-              collapsed: true,
-              items: [
-                {
-                  text: "Zortrax M200",
-                  link: "/Meca/Impression3D/Imprimantes/ZortraxM200",
-                },
-                {
-                  text: "Creality CR-10S Pro",
-                  link: "/Meca/Impression3D/Imprimantes/CrealityCR10SPro",
-                },
-                {
-                  text: "I3 Metal Motion",
-                  link: "/Meca/Impression3D/Imprimantes/I3MetalMotion",
-                },
-              ],
+              text: "Zortrax M200",
+              link: "/Meca/Impression3D/ZortraxM200",
+            },
+            {
+              text: "Creality CR-10S Pro",
+              link: "/Meca/Impression3D/CrealityCR10SPro",
+            },
+            {
+              text: "I3 Metal Motion",
+              link: "/Meca/Impression3D/I3MetalMotion",
             },
           ],
         },
       ],
       "/Elec/": [
         { text: "Introduction", link: "/Elec/" },
-        { // Divers
+        {
           text: "Divers",
           items: [
             { text: "Checklist PCB", link: "/Elec/ChecklistPCB" },
             { text: "Connecteurs Mini-Micro Fit", link: "/Elec/Connecteurs" },
           ],
         },
-        { // KiCAD
+        {
           text: "KiCAD",
           collapsed: false,
           items: [
