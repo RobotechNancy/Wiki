@@ -55,7 +55,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     footer: {
-      copyright: "Copyright © 2019-2025 Contributeurs du wiki Robotech Nancy",
+      copyright: "Copyright © 2019-2026 Contributeurs du wiki Robotech Nancy",
     },
 
     editLink: {
