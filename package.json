@@ -1,8 +1,4 @@
 {
-  "devDependencies": {
-    "tsx": "^4.21.0",
-    "vitepress": "2.0.0-alpha.15"
-  },
   "scripts": {
     "dev": "vitepress dev docs --host",
     "build": "vitepress build docs",
@@ -13,5 +9,9 @@
     "markdown-it-sup": "^2.0.0",
     "medium-zoom": "^1.1.0",
     "vitepress-component-medium-zoom": "^1.1.1"
+  },
+  "devDependencies": {
+    "tsx": "^4.21.0",
+    "vitepress": "2.0.0-alpha.15"
   }
 }
