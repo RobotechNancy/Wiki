@@ -6,6 +6,7 @@
     "gen": "node scripts/generate-pages.mjs"
   },
   "dependencies": {
+    "@vueuse/core": "^14.2.1",
     "markdown-it-sup": "^2.0.0",
     "medium-zoom": "^1.1.0",
     "vitepress-component-medium-zoom": "^1.1.1"
