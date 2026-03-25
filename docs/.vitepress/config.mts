@@ -310,6 +310,15 @@ export default defineConfig({
               text: "Bonnes pratiques",
               link: "/Meca/Fusion360/BonnesPratiques",
             },
+            {
+              text: "Manufacture",
+              link: "/Meca/Fusion360/Manufacture",
+              items: [
+                { text: "Préparation", link: "/Meca/Fusion360/Manufacture/Preparation" },
+                { text: "Opérations", link: "/Meca/Fusion360/Manufacture/Operations" },
+                { text: "Export", link: "/Meca/Fusion360/Manufacture/Export" },
+              ]
+            }
           ],
         },
         {
