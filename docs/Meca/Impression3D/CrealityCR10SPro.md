@@ -66,7 +66,7 @@ Sélectionner `Profiles` puis `Import`<br>
 Ou presser `Ctrl + J` pour ouvrir les paramètres de profils
 
 Charger le profile Cura suivant
-<file src="/Wiki/Profile_Creality_CR10S_Pro.curaprofile">Profile Creality CR-10S Pro</file>
+<file src="Profile_Creality_CR10S_Pro.curaprofile">Profile Creality CR-10S Pro</file>
 
 ## Lancer une impression
 
