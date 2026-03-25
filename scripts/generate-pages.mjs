@@ -12,14 +12,14 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Configuration
-const DOCS_DIR = path.join(__dirname, 'docs');
+const DOCS_DIR = path.join(__dirname, '../docs');
 
 /**
  * Load config using tsx to execute TypeScript
  */
 async function loadConfig() {
     const tempScript = `
-import config from './docs/.vitepress/config.mts';
+import config from '../docs/.vitepress/config.mts';
 console.log(JSON.stringify(config.default || config, null, 2));
 `;
 

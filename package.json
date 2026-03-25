@@ -3,7 +3,7 @@
     "dev": "vitepress dev docs --host",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs",
-    "gen": "node generate-pages.mjs"
+    "gen": "node scripts/generate-pages.mjs"
   },
   "dependencies": {
     "markdown-it-sup": "^2.0.0",
