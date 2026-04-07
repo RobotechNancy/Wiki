@@ -88,7 +88,7 @@ Pour cela, il faut importer le modèle de machine correspondant.
 
 :::details [Optionel] Charger une machine depuis un fichier
 Télécharger et importer le fichier **machine** ci-dessous
-<file src="Genmitsu_ProveXL_4030.f3d">Configuration machine</file>
+<file src="Genmitsu_ProveXL_4030_YXZ.f3d">Configuration machine</file>
 
 
 > [!danger] ATTENTION

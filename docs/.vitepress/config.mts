@@ -90,9 +90,26 @@ export default defineConfig({
 
     nav: [
       { text: "Home", link: "/" },
-      { text: "Informatique", link: "/Info/" },
-      { text: "Electronique", link: "/Elec/" },
-      { text: "Mecanique", link: "/Meca/" },
+      {
+        text: "Pôles",
+        items: [
+          { text: "Informatique", link: "/Info/" },
+          { text: "Electronique", link: "/Elec/" },
+          { text: "Mecanique", link: "/Meca/" },
+        ]
+      },
+      {
+        text: "Historique",
+        items: [
+          { text: "Année 2020", link: "/Historique/Annee_2020" },
+          { text: "Année 2021", link: "/Historique/Annee_2021" },
+          { text: "Année 2022", link: "/Historique/Annee_2022" },
+          { text: "Année 2023", link: "/Historique/Annee_2023" },
+          { text: "Année 2024", link: "/Historique/Annee_2024" },
+          { text: "Année 2025", link: "/Historique/Annee_2025" },
+          { text: "Année 2026", link: "/Historique/Annee_2026" },
+        ]
+      },
       {
         text: "Contribuer",
         items: [
@@ -299,6 +316,10 @@ export default defineConfig({
             {
               text: "Commandes par défaut",
               link: "/Meca/Divers/CommandesParDefaut",
+            },
+            {
+              text: "Graver une plaque à l'EIT",
+              link: "/Meca/Divers/GravureEIT",
             },
           ],
         },
