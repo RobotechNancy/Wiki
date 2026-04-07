@@ -101,6 +101,7 @@ export default defineConfig({
       {
         text: "Historique",
         items: [
+          { text: "Récapitulatif", link: "/Historique/Recap" },
           { text: "Année 2020", link: "/Historique/Annee_2020" },
           { text: "Année 2021", link: "/Historique/Annee_2021" },
           { text: "Année 2022", link: "/Historique/Annee_2022" },
