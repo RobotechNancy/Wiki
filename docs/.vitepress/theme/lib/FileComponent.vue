@@ -2,12 +2,12 @@
 const props = defineProps(["src"]);
 
 let src = props.src;
-const fileName = src.match(/.*\/(.*)/)[1];
+const fileName = src.startsWith("/") ? src.match(/.*\/(.*)/)[1] : src;
 
 function downloadURI(uri, name) {
   var link = document.createElement("a");
   link.download = name;
-  link.href = uri;
+  link.href = link.href.startsWith("http") ? uri : `/Wiki/${uri}`;
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
