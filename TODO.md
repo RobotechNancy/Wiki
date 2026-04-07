@@ -16,3 +16,8 @@
 -[ ] Différents outils
 	-[ ] Profondeurs multiples
 	-[ ] Brut restant
+
+## Utilisation STM32
+-[x] Installation de STM32Cube IDE et MX
+-[x] Installation de l'extension VSCode
+-[ ] Utilisation de l'extension VSCode
