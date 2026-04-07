@@ -6,6 +6,7 @@ import ZoomLayout from "./lib/ZoomLayout.vue";
 import FileComponent from "./lib/FileComponent.vue";
 import ImgComponent from "./lib/ImgComponent.vue";
 import FloatDivComponent from "./lib/FloatDivComponent.vue";
+import ClipoardComponent from "./lib/ClipboardComponent.vue";
 
 export default {
   extends: DefaultTheme,
@@ -14,5 +15,6 @@ export default {
     app.component("file", FileComponent);
     app.component("Image", ImgComponent);
     app.component("Div", FloatDivComponent);
+    app.component("Copy", ClipoardComponent);
   },
 } satisfies Theme;

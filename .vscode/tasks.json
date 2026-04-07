@@ -3,7 +3,7 @@
   "tasks": [
     {
       "label": "Start dev server",
-      "command": "if [ -f \"$(which pnpm)\" ]; then pnpm run dev; else npm run dev; fi",
+      "command": "npm run dev",
       "type": "shell",
       "group": "build",
       "detail": "vitepress dev docs",
@@ -18,7 +18,7 @@
     },
     {
       "label": "Build project",
-      "command": "if [ -f \"$(which pnpm)\" ]; then pnpm run build; else npm run build; fi && cd docs/.vitepress/dist && mkdir Wiki && mv * Wiki && python -m http.server",
+      "command": "python3 ${workspaceFolder}/scripts/build.py ${workspaceFolder}",
       "type": "shell",
       "group": "build",
       "detail": "vitepress build docs",
@@ -33,7 +33,7 @@
     },
     {
       "label": "Generate tree",
-      "command": "if [ -f \"$(which pnpm)\" ]; then pnpm run gen; else npm run gen; fi",
+      "command": "npm run gen",
       "type": "shell",
       "group": "build",
       "detail": "node generate-pages.mjs",
