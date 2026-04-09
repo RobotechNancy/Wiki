@@ -55,7 +55,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     footer: {
-      copyright: "Copyright © 2019-2025 Contributeurs du wiki Robotech Nancy",
+      copyright: "Copyright © 2019-2026 Contributeurs du wiki Robotech Nancy",
     },
 
     editLink: {
@@ -90,9 +90,26 @@ export default defineConfig({
 
     nav: [
       { text: "Home", link: "/" },
-      { text: "Informatique", link: "/Info/" },
-      { text: "Electronique", link: "/Elec/" },
-      { text: "Mecanique", link: "/Meca/" },
+      {
+        text: "Pôles",
+        items: [
+          { text: "Informatique", link: "/Info/" },
+          { text: "Electronique", link: "/Elec/" },
+          { text: "Mecanique", link: "/Meca/" },
+        ]
+      },
+      {
+        text: "Historique",
+        items: [
+          { text: "Année 2020", link: "/Historique/Annee_2020" },
+          { text: "Année 2021", link: "/Historique/Annee_2021" },
+          { text: "Année 2022", link: "/Historique/Annee_2022" },
+          { text: "Année 2023", link: "/Historique/Annee_2023" },
+          { text: "Année 2024", link: "/Historique/Annee_2024" },
+          { text: "Année 2025", link: "/Historique/Annee_2025" },
+          { text: "Année 2026", link: "/Historique/Annee_2026" },
+        ]
+      },
       {
         text: "Contribuer",
         items: [
@@ -104,11 +121,11 @@ export default defineConfig({
 
     sidebar: {
       "/Info/": [
-        { // Introduction
+        {
           text: "Introduction",
           link: "/Info/",
         },
-        { // Divers
+        {
           text: "Divers",
           collapsed: false,
           items: [
@@ -126,7 +143,7 @@ export default defineConfig({
             },
           ],
         },
-        { // Build avec CMake
+        {
           text: "Build avec CMake",
           collapsed: false,
           items: [
@@ -136,7 +153,7 @@ export default defineConfig({
             { text: "Créer une librairie", link: "/Info/CMake/Librairie" },
           ],
         },
-        { // Projets STM32
+        {
           text: "Projets STM32",
           collapsed: false,
           items: [
@@ -145,7 +162,7 @@ export default defineConfig({
             { text: "Configurer une carte", link: "/Info/STM32/CubeMX" },
           ],
         },
-        { // Bus CAN
+        {
           text: "Bus CAN",
           collapsed: false,
           items: [
@@ -176,7 +193,7 @@ export default defineConfig({
             },
           ],
         },
-        { // Modules XBee
+        {
           text: "Modules XBee",
           collapsed: false,
           items: [
@@ -206,7 +223,7 @@ export default defineConfig({
             },
           ],
         },
-        { // Odométrie
+        {
           text: "Odométrie",
           collapsed: false,
           items: [
@@ -266,7 +283,7 @@ export default defineConfig({
             },
           ],
         },
-        { // Signaux PWM
+        {
           text: "Signaux PWM",
           collapsed: false,
           items: [
@@ -290,7 +307,7 @@ export default defineConfig({
       ],
       "/Meca/": [
         { text: "Introduction", link: "/Meca/" },
-        { // Divers
+        {
           text: "Divers",
           collapsed: false,
           items: [
@@ -300,9 +317,13 @@ export default defineConfig({
               text: "Commandes par défaut",
               link: "/Meca/Divers/CommandesParDefaut",
             },
+            {
+              text: "Graver une plaque à l'EIT",
+              link: "/Meca/Divers/GravureEIT",
+            },
           ],
         },
-        { // Fusion360
+        {
           text: "Fusion360",
           collapsed: false,
           items: [
@@ -310,9 +331,18 @@ export default defineConfig({
               text: "Bonnes pratiques",
               link: "/Meca/Fusion360/BonnesPratiques",
             },
+            {
+              text: "Manufacture",
+              link: "/Meca/Fusion360/Manufacture",
+              items: [
+                { text: "Préparation", link: "/Meca/Fusion360/Manufacture/Preparation" },
+                { text: "Opérations", link: "/Meca/Fusion360/Manufacture/Operations" },
+                { text: "Export", link: "/Meca/Fusion360/Manufacture/Export" },
+              ]
+            }
           ],
         },
-        { // Usinage
+        {
           text: "Usinage",
           collapsed: false,
           items: [
@@ -321,7 +351,7 @@ export default defineConfig({
               link: "/Meca/Usinage/SetupFusion360",
             },
             {
-              text: "Setup ProverXL 4030",
+              text: "Utilisation CNC",
               collapsed: true,
               items: [
                 {
@@ -342,7 +372,7 @@ export default defineConfig({
             { text: "Traitement usinage 3D", link: "/Meca/Usinage/Usinage3D" },
           ],
         },
-        { // Impression 3D
+        {
           text: "Impression 3D",
           collapsed: false,
           items: [
@@ -350,38 +380,31 @@ export default defineConfig({
               text: "Préparation dans Fusion360",
               link: "/Meca/Impression3D/SetupFusion360",
             },
-            { text: "Slicer", link: "/Meca/Impression3D/Slicer" },
             {
-              text: "Imprimantes",
-              collapsed: true,
-              items: [
-                {
-                  text: "Zortrax M200",
-                  link: "/Meca/Impression3D/Imprimantes/ZortraxM200",
-                },
-                {
-                  text: "Creality CR-10S Pro",
-                  link: "/Meca/Impression3D/Imprimantes/CrealityCR10SPro",
-                },
-                {
-                  text: "I3 Metal Motion",
-                  link: "/Meca/Impression3D/Imprimantes/I3MetalMotion",
-                },
-              ],
+              text: "Zortrax M200",
+              link: "/Meca/Impression3D/ZortraxM200",
+            },
+            {
+              text: "Creality CR-10S Pro",
+              link: "/Meca/Impression3D/CrealityCR10SPro",
+            },
+            {
+              text: "I3 Metal Motion",
+              link: "/Meca/Impression3D/I3MetalMotion",
             },
           ],
         },
       ],
       "/Elec/": [
         { text: "Introduction", link: "/Elec/" },
-        { // Divers
+        {
           text: "Divers",
           items: [
             { text: "Checklist PCB", link: "/Elec/ChecklistPCB" },
             { text: "Connecteurs Mini-Micro Fit", link: "/Elec/Connecteurs" },
           ],
         },
-        { // KiCAD
+        {
           text: "KiCAD",
           collapsed: false,
           items: [
