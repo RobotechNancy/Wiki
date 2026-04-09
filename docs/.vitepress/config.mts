@@ -155,12 +155,12 @@ export default defineConfig({
           ],
         },
         {
-          text: "Projets STM32",
+          text: "Débuter avec STM32",
           collapsed: false,
           items: [
-            { text: "Installer", link: "/Info/STM32/Installation" },
-            { text: "Créer un projet", link: "/Info/STM32/Projet" },
-            { text: "Configurer une carte", link: "/Info/STM32/CubeMX" },
+            { text: "Installations", link: "/Info/STM32/Installation" },
+            { text: "Création de l'IOC", link: "/Info/STM32/CreationIOC" },
+            { text: "Configuration de IDE", link: "/Info/STM32/ConfigIDE" },
           ],
         },
         {
