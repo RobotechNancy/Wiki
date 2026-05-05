@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "allowJs": true,
-    "outDir": "docs/.vitepress/dist"
+    "outDir": "docs/.vitepress/dist",
+    "rootDir": ""
   }
 }
