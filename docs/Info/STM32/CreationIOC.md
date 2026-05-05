@@ -10,7 +10,7 @@ La première étape dans un projet STM32 est de créer le fichier `.ioc` avec **
 ## Page d'accueil
 Sur la page d'accueil de CubeMX, sélectionnez `File` dans l'onglet en haut, puis `New project` pour créer un nouveau projet (ou `Load project` pour en ouvrir un existant).
 
-<img src="/images/Info/STM32/create_ioc/new_project.png" alt="Nouveau projet">
+<img src="/docs/public/images/Info/STM32/create_ioc/new_project.png" alt="Nouveau projet">
 
 Après un petit instant de téléchargement, vous arrivez sur l'interface de sélection de votre carte.
 
@@ -21,7 +21,7 @@ L'onglet `MCU/MPU selector` permet de rechercher une **puce** STM spécifique, t
 
 Nous vous préconisons d'utiliser l'onglet `Board selector`, afin d'obtenir certaines configuration par défaut de la puce de votre carte STM. Sélectionnez donc l'onglet `Board` et entrez le nom de votre carte STM32 (par exemple NUCLEO-L432KC) dans le champ `Commerical Part Number`. Cette dernière devrait apparaître comme dans l'image ci-dessous :
 
-<img src="/images/Info/STM32/create_ioc/board_selector.png" alt="Sélection de la carte">
+<img src="/docs/public/images/Info/STM32/create_ioc/board_selector.png" alt="Sélection de la carte">
 
 Cliquez dessus, et acceptez l'initialisation par défaut des broches (vous pourrez les modifier plus tard si vous le souhaitez).
 
@@ -37,7 +37,7 @@ Vous tombez maintenant sur l'interface de configuration des broches de la puce d
 - Les fonctionnalités (interrupts, DMA, ...)
 - etc.
 
-<img src="/images/Info/STM32/create_ioc/board_config.png" alt="Configuration de la carte">
+<img src="/docs/public/images/Info/STM32/create_ioc/board_config.png" alt="Configuration de la carte">
 
 > [!WARNING]
 > Les noms des broches de la puce (affichés sur l'interface de CubeMX) ne sont pas les mêmes que les broches du microcontroleur ! Il y a une correspondance donnée par le PINOUT DATASHEET de votre microcontroleur.
@@ -50,4 +50,4 @@ Vient ensuite le choix de la `Toolchain / IDE`. C'est ici que vous déciderez de
 
 Cliquez enfin sur `Generate code` qui génère le code nécessaire à la bonne configuration de la carte (retrouvable dans `Core/Src/main.c` et `Core/Inc/main.h`).
 
-<img src="/images/Info/STM32/create_ioc/project_manager.png" alt="Gestionnaire de projet">
+<img src="/docs/public/images/Info/STM32/create_ioc/project_manager.png" alt="Gestionnaire de projet">
