@@ -23,11 +23,10 @@ import {
 
 const members = [
   {
-    avatar: 'https://www.github.com/jpistre.png',
+    avatar: 'https://codeberg.org/mrspaar.png',
     name: 'Julien Pistre',
     title: 'Co-créateur',
     links: [
-      { icon: 'github', link: 'https://github.com/jpistre' },
       { icon: 'codeberg', link: 'https://codeberg.org/jpistre' }
     ]
   },
