@@ -17,7 +17,7 @@ Pour cela, rendez-vous sur [le site officiel de STM Electronics](https://www.st.
 
 ## Installation de l'IDE
 
-- ### STM32CubeIDE
+### STM32CubeIDE
 
 C'est, dans une certaine mesure, la manière la plus facile de développer sur STM32 (même si sa prise en main est fastidieuse). Lancé en 2015 et basé sur Eclipse, cet IDE permet de rédiger, compiler et débuger du code sur la STM32.
 
@@ -28,7 +28,7 @@ Sur Linux, il est possible que le fichier d'installation ne soit pas exécutable
 > Si vous utilisez `flatpak` sur Linux : `flatpak install flathub com.st.STM32CubeIDE`
 > (ne nécessite pas de donner son email, nom et prénom).
 
-- ### STM32CubeIDE for Visual Studio Code
+### STM32CubeIDE for Visual Studio Code
 
 C'est la dernière nouveauté (2025)! Il s'agit d'une extension de VSCode qui permet d'obtenir les mêmes fonctionnalités que STM32CubeIDE tout en restant sur VSCode (qui est bien plus aisé à prendre en main).
 

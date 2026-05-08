@@ -32,7 +32,7 @@ Vous tombez maintenant sur l'interface de configuration des broches de la puce d
 
 - Les broches entrées - sorties
 - Les horloges (`Clock Configuration`)
-- Les timers (génération de PWM par exemple)
+- Les timers (génération de [PWM](/Info/PWM/STM32.md) par exemple)
 - Les connectivités (UART, SPI, I2C, CAN, USB, ...)
 - Les fonctionnalités (interrupts, DMA, ...)
 - etc.
