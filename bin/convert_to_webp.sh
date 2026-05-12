@@ -130,22 +130,22 @@ error() {
 #region OS Check
 
 if [ "$OSTYPE" == "linux-gnu"* ]; then
-    if [ ! -e "./scripts/bin/cwebp" ]; then
+    if [ ! -e "./bin/cwebp" ]; then
         error "cwebp is not missing"
         exit 1
     fi
-    cwebp="./scripts/bin/cwebp"
+    cwebp="./bin/cwebp"
 elif [ "$OSTYPE" == "cygwin" ] || [ "$OSTYPE" == "msys" ]; then
-    if [ ! -e "./scripts/bin/cwebp.exe" ]; then
+    if [ ! -e "./bin/cwebp.exe" ]; then
         error "cwebp is missing"
         exit 1
     fi
-    cwebp="./scripts/bin/cwebp.exe"
+    cwebp="./bin/cwebp.exe"
 fi
 
-#endregion OS Check
-
 info "cwebp found at" "$cwebp"
+
+#endregion OS Check
 
 filetypes="jpg png jpeg"
 
@@ -170,9 +170,9 @@ for ext in $filetypes; do
     done
 done
 
-read -p "Replace urls in files ? (y/N) " confirm_replace
+[ ! "$1" = "-y" ] && read -p "Replace urls in files ? (y/N) " confirm_replace
 
-if [ "$confirm_replace" = "y" ]; then
+if [ "$confirm_replace" = "y" ] || [ "$1" = "-y" ]; then
     for ext in $filetypes; do
         info "Replacing extensions in" $ext "files"
         files=$(grep -ERal --color "[a-zA-Z0-9_]+\.$ext" --exclude-dir=node_modules --include="*.md")
@@ -191,9 +191,9 @@ else
     debug "Skipped" "$ext" "file path replacement"
 fi
 
-read -p "Delete files original files ? (y/N) " confirm_delete
+[ ! "$1" = "-y" ] && read -p "Delete files original files ? (y/N) " confirm_delete
 
-if [ "$confirm_delete" = "y" ]; then
+if [ "$confirm_delete" = "y" ] || [ "$1" = "-y" ]; then
     for ext in $filetypes; do
         error $(find . -name "*.$ext" -not -path "./docs/.vitepress/*" -exec rm {} \; 2>&1 > /dev/null)
         debug "Removed" $ext "files"
