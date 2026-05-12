@@ -100,7 +100,7 @@ Si le post est `machinesimulation.cps`, éditer la machine à l'aide de l'icone 
 <img src="/images/Meca/Fusion360/Program_ButtonEdit.webp" alt="Bouton d'édition de la machine" />
 
 Dans `Post processing`, ouvrir un nouveau Post processeur
-<img src="/images/Meca/Fusion360/Program_PostSelector.png" alt="Bouton sélecteur de fichier" />
+<img src="/images/Meca/Fusion360/Program_PostSelector.webp" alt="Bouton sélecteur de fichier" />
 
 Vous pouvez ensuite importer le Post processeur avec deux méthodes :
 - Utiliser la bibliothèque de Fusion en allant dans `Fusion library` et en important `grbl / Grbl`

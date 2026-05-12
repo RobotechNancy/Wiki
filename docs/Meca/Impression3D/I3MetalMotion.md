@@ -1,6 +1,6 @@
 # I3 MetalMotion
 
-<img src="/images/Meca/Impression3D/Printers/I3MetalMotion.png" width="33%" class="no-shadow" />
+<img src="/images/Meca/Impression3D/Printers/I3MetalMotion.webp" width="33%" class="no-shadow" />
 
 [Lien vers la documentation](https://www.emotion-tech.com/support-i3-metalmotion)
 
