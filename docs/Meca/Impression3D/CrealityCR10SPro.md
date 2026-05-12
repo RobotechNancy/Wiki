@@ -37,16 +37,16 @@ Ce tutoriel ne concerne pas ces slicers, mais ils fonctionnent aussi si vous sav
 
 Sélectionner `Non UltiMaker printer`
 
-<Image src="/images/Meca/Impression3D/Cura_AddPrinter.png" alt="Ajouter une imprimante non-Ultimaker" showAlt="true" width="75%" />
+<Image src="/images/Meca/Impression3D/Cura_AddPrinter.webp" alt="Ajouter une imprimante non-Ultimaker" showAlt="true" width="75%" />
 
 Clicker sur `Add a non-network printer` et chercher `Creality CR-10S Pro`
 
-<Image src="/images/Meca/Impression3D/Cura_AddPrinterSearch.png" alt="Chercher Creality CR-10S Pro" showAlt="true" width="75%" />
+<Image src="/images/Meca/Impression3D/Cura_AddPrinterSearch.webp" alt="Chercher Creality CR-10S Pro" showAlt="true" width="75%" />
 
 ::: details Si le setup initial a déjà été fait
 Dans la barre d'action, ouvrir `Preferences/Configure Cura...`
 
-<Image src="/images/Meca/Impression3D/Cura_ActionBar.png" alt="La barre d'action" showAlt="true" />
+<Image src="/images/Meca/Impression3D/Cura_ActionBar.webp" alt="La barre d'action" showAlt="true" />
 
 Sélectionner `Printers` puis `Add New`
 :::
@@ -55,12 +55,12 @@ Le logiciel vous donne ainsi les paramètres recommandés de la machine. il n’
 
 Vérifiez tout de même que les informations sont identiques à celles-ci
 
-| <Image src="/images/Meca/Impression3D/Cura_DefaultSettings1.png" alt="Paramètres par défaut - Page 'Printer'" /> | <Image src="/images/Meca/Impression3D/Cura_DefaultSettings2.png" alt="Paramètres par défaut - Page 'Extruder 1'" /> |
+| <Image src="/images/Meca/Impression3D/Cura_DefaultSettings1.webp" alt="Paramètres par défaut - Page 'Printer'" /> | <Image src="/images/Meca/Impression3D/Cura_DefaultSettings2.webp" alt="Paramètres par défaut - Page 'Extruder 1'" /> |
 | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 
 Dans la barre d'action, ouvrir `Preferences/Configure Cura...`
 
-<Image src="/images/Meca/Impression3D/Cura_ActionBar.png" alt="La barre d'action" showAlt="true" />
+<Image src="/images/Meca/Impression3D/Cura_ActionBar.webp" alt="La barre d'action" showAlt="true" />
 
 Sélectionner `Profiles` puis `Import`<br>
 Ou presser `Ctrl + J` pour ouvrir les paramètres de profils
@@ -72,19 +72,19 @@ Charger le profile Cura suivant
 
 Sélectionner le type de filament (probablement `Chromatik PLA`)
 
-<Image src="/images/Meca/Impression3D/Cura_SelectFilament.png" alt="Sélection du matériau" showAlt="true" />
+<Image src="/images/Meca/Impression3D/Cura_SelectFilament.webp" alt="Sélection du matériau" showAlt="true" />
 
 Sélectionner le profil adapté dans `Print settings`
 
-<Image src="/images/Meca/Impression3D/Cura_ProfileSelect.png" alt="Sélection du matériau" showAlt="true" />
+<Image src="/images/Meca/Impression3D/Cura_ProfileSelect.webp" alt="Sélection du matériau" showAlt="true" />
 
 > [!tip]
 >
-> <div style="display: flex; flex-direction: row;"> <div>Cette imprimante ne nécessite pas de "Raft", càd le support plat que vous pouvez trouvez en dessous des impressions (ex : avec les impressions sur Z-Suite qui en ont besoin).<br><br>Mais si cela s’annonce nécessaire dû à une pièce grande en hauteur et fine, il sera peut être nécessaire d’en mettre un.<br>Pour se faire, afficher les options avancées, puis le sélectionner dans <code>Build Plate Adhesion</code></div><div><Image src="/images/Meca/Impression3D/Cura_Raft.png" alt="Activer le Raft dans les paramètres avancés" /></div> </div>
+> <div style="display: flex; flex-direction: row;"> <div>Cette imprimante ne nécessite pas de "Raft", càd le support plat que vous pouvez trouvez en dessous des impressions (ex : avec les impressions sur Z-Suite qui en ont besoin).<br><br>Mais si cela s’annonce nécessaire dû à une pièce grande en hauteur et fine, il sera peut être nécessaire d’en mettre un.<br>Pour se faire, afficher les options avancées, puis le sélectionner dans <code>Build Plate Adhesion</code></div><div><Image src="/images/Meca/Impression3D/Cura_Raft.webp" alt="Activer le Raft dans les paramètres avancés" /></div> </div>
 
 Importer la pièce au format `.stl`
 
-<Image src="/images/Meca/Impression3D/Cura_ImportSTL.png" alt="Bouton d'importation d'un fichier dans Cura" showAlt="true" />
+<Image src="/images/Meca/Impression3D/Cura_ImportSTL.webp" alt="Bouton d'importation d'un fichier dans Cura" showAlt="true" />
 
 > [!tip]
 >
@@ -96,14 +96,14 @@ Il est nécéssaire de faire le **plus de contact possible** entre la pièce et 
 
 Une fois la pièce placée correctement, cliquez sur `Slice` en bas à droite de la fenêtre. Ainsi vous enregistrez le fichier de paramétrage d’impression de la pièce.
 Vous pouvez voir un aperçu en cliquant sur “Preview” en haut de la fenêtre.
-<Image src="/images/Meca/Impression3D/Cura_SliceButton.png" alt="Bouton slice pour préparer la pièce" showAlt />
+<Image src="/images/Meca/Impression3D/Cura_SliceButton.webp" alt="Bouton slice pour préparer la pièce" showAlt />
 
 Pour enregistrer le fichier pour l’imprimante il vous faudra une **carte microSD**
-<Image src="/images/Meca/Impression3D/Creality_SDCard.jpg" alt="Carte SD dans son adaptateur" showAlt width="75%" />
+<Image src="/images/Meca/Impression3D/Creality_SDCard.webp" alt="Carte SD dans son adaptateur" showAlt width="75%" />
 
 <Div>
 <p>Celle-ci est situé sur le côté</p>
-<Image src="/images/Meca/Impression3D/Creality_SDCardLocation.jpg" alt="Emplacement de la carte SD" width="50%"/>
+<Image src="/images/Meca/Impression3D/Creality_SDCardLocation.webp" alt="Emplacement de la carte SD" width="50%"/>
 </Div>
 
 > [!danger] ATTENTION
@@ -111,7 +111,7 @@ Pour enregistrer le fichier pour l’imprimante il vous faudra une **carte micro
 > Sinon l’imprimante ne le détectera pas. [[source]](https://www.facebook.com/groups/323216258617076/posts/1908562576749095/)
 
 Allumer l’imprimante : appuyez sur `Print`, puis sélectionnez le fichier dans la liste qui apparaît à l’écran (Rappel : si le fichier n’apparaît pas, c probablement dû à un trop long nom de fichier).
-<Image src="/images/Meca/Impression3D/Creality_MenuPrint.jpg" alt="Acceuil Creality - Touche 'Print' sélectionnée" width="75%" showAlt />
+<Image src="/images/Meca/Impression3D/Creality_MenuPrint.webp" alt="Acceuil Creality - Touche 'Print' sélectionnée" width="75%" showAlt />
 
 Une fois l’impression lancée, l’imprimante va s’étalonner
 
@@ -121,16 +121,16 @@ Une fois l’impression lancée, l’imprimante va s’étalonner
 > Cette étape se déroule directement sur l’imprimante, pas besoin du logiciel.
 
 Pour retirer le fil charger, aller dans `Settings`, dedans vous aures plusieurs choix dont l’icône `Refuel`, cliquez dessus.
-<Image src="/images/Meca/Impression3D/Creality_MenuSettings.jpg" alt="Acceuil Creality - Touche 'Settings' sélectionnée" width="75%" showAlt/>
+<Image src="/images/Meca/Impression3D/Creality_MenuSettings.webp" alt="Acceuil Creality - Touche 'Settings' sélectionnée" width="75%" showAlt/>
 
 Vous pourrez ainsi retirer du fil petit à petit (`Retreat`)
 
 Une fois le fil retiré, chargez en un nouveau en le faisant passer par ces deux endroits :
 
 <Div>
-<Image src="/images/Meca/Impression3D/Creality_PrintFeed.jpg" alt="Acceuil Creality - Touche 'Settings' sélectionnée" width="30%" />
+<Image src="/images/Meca/Impression3D/Creality_PrintFeed.webp" alt="Acceuil Creality - Touche 'Settings' sélectionnée" width="30%" />
 <p style="align-self: center;">et</p>
-<Image src="/images/Meca/Impression3D/Creality_PrintHead.jpg" alt="Acceuil Creality - Touche 'Settings' sélectionnée" width="30%" />
+<Image src="/images/Meca/Impression3D/Creality_PrintHead.webp" alt="Acceuil Creality - Touche 'Settings' sélectionnée" width="30%" />
 </Div>
 
 Retourner sur l’écran et cette fois-ci, faites entrer petit à petit le fil avec `Feed`.

@@ -45,6 +45,24 @@
         "showReuseMessage": true,
         "clear": true
       }
-    }
+    },
+        {
+      "label": "Compress image",
+      "command": "${workspaceFolder}/scripts/convert_to_webp.sh",
+      "type": "shell",
+      "windows": {
+        "command": "& 'C:\\Program Files\\Git\\bin\\bash.exe' ${workspaceFolder}/scripts/convert_to_webp.sh",
+      },
+      "group": "build",
+      "detail": "Convert images to Webp to reduce size",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "dedicated",
+        "showReuseMessage": true,
+        "clear": true
+      }
+    },
   ]
 }
