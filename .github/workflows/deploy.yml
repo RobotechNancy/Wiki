@@ -45,6 +45,10 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
+
+      - name: Convert images
+        run: ./bin/convert_to_webp.sh -y
+
       - name: Build with VitePress
         run: pnpm run build
 
