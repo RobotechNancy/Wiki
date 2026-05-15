@@ -14,5 +14,6 @@ const { Layout } = DefaultTheme;
       background: 'rgba(0, 0, 0, 0.9)',
       margin: 24,
     }"
+    selector=".vp-doc img:not([data-disable-zoom])"
   />
 </template>
