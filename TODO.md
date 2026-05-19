@@ -6,11 +6,12 @@
 
 
 ## Utilisation STM32
-- [ ] Installation de STM32Cube IDE et MX (à détailler)
+- [x] Installation de STM32Cube IDE et MX (à détailler)
 	- [ ] Workspace avec STM32CubeIDE
-- [ ] Installation de l'extension VSCode (à détailler)
-- [ ] Utilisation de l'extension VSCode
+- [x] Installation de l'extension VSCode (à détailler)
+- [x] Utilisation de l'extension VSCode
 - [ ] Structure des dossiers (Src et Inc)
+- [ ] Commande des moteurs pas à pas
 
 ## Usinage 3D
 -[ ] setup le post process et la machine en premier
