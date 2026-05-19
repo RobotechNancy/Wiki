@@ -127,20 +127,32 @@ export default defineConfig({
           link: "/Info/",
         },
         {
-          text: "Divers",
+          text: "Débuter avec STM32",
           collapsed: false,
           items: [
+            { text: "Installations", link: "/Info/STM32/Installation" },
+            { text: "Création de l'IOC", link: "/Info/STM32/CreationIOC" },
+            { text: "Configuration de IDE", link: "/Info/STM32/ConfigIDE" },
+          ],
+        },
+        {
+          text: "Signaux PWM",
+          collapsed: false,
+          items: [
+            { text: "STM32", link: "/Info/PWM/STM32" },
             {
-              text: "Cartes utilisées",
-              link: "/Info/Cartes",
-            },
-            {
-              text: "Raspberry",
-              link: "/Info/RaspiLinux",
-            },
-            {
-              text: "Connexion SSH",
-              link: "/Info/ConnexionSSH",
+              text: "PCA9685",
+              collapsed: true,
+              items: [
+                {
+                  text: "Utiliser la librairie",
+                  link: "/Info/PWM/PCA9685/Librairie",
+                },
+                {
+                  text: "Implémentation",
+                  link: "/Info/PWM/PCA9685/Implementation",
+                },
+              ],
             },
           ],
         },
@@ -154,15 +166,7 @@ export default defineConfig({
             { text: "Créer une librairie", link: "/Info/CMake/Librairie" },
           ],
         },
-        {
-          text: "Débuter avec STM32",
-          collapsed: false,
-          items: [
-            { text: "Installations", link: "/Info/STM32/Installation" },
-            { text: "Création de l'IOC", link: "/Info/STM32/CreationIOC" },
-            { text: "Configuration de IDE", link: "/Info/STM32/ConfigIDE" },
-          ],
-        },
+        
         {
           text: "Bus CAN",
           collapsed: false,
@@ -285,23 +289,20 @@ export default defineConfig({
           ],
         },
         {
-          text: "Signaux PWM",
+          text: "Divers",
           collapsed: false,
           items: [
-            { text: "STM32", link: "/Info/PWM/STM32" },
             {
-              text: "PCA9685",
-              collapsed: true,
-              items: [
-                {
-                  text: "Utiliser la librairie",
-                  link: "/Info/PWM/PCA9685/Librairie",
-                },
-                {
-                  text: "Implémentation",
-                  link: "/Info/PWM/PCA9685/Implementation",
-                },
-              ],
+              text: "Cartes utilisées",
+              link: "/Info/Cartes",
+            },
+            {
+              text: "Raspberry",
+              link: "/Info/RaspiLinux",
+            },
+            {
+              text: "Connexion SSH",
+              link: "/Info/ConnexionSSH",
             },
           ],
         },

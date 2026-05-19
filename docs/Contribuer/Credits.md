@@ -87,6 +87,14 @@ const members = [
       { icon: 'codeberg', link: 'https://codeberg.org/NoAccount1' }
     ]
   },
+  {
+    avatar: 'https://www.github.com/FreedGB.png',
+    name: 'FreedGB',
+    title: 'Contributeur',
+    links: [
+      { icon: 'github', link: 'https://www.github.com/FreedGB' },
+    ]
+  }
 ]
 </script>
 
