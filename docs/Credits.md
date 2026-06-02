@@ -27,7 +27,7 @@ const members = [
     name: 'Julien Pistre',
     title: 'Co-créateur',
     links: [
-      { icon: 'codeberg', link: 'https://codeberg.org/jpistre' }
+      { icon: 'codeberg', link: 'https://codeberg.org/mrspaar' }
     ]
   },
   {
@@ -71,12 +71,9 @@ const members = [
     ]
   },
   {
-    avatar: 'https://github.com/ghost.png',
+    avatar: 'https://cdn.discordapp.com/avatars/661677635935404052/fecf4618a89ac406906750f7eef32411.webp?size=1024',
     name: 'mawa2005',
-    title: 'Contributeur',
-    // links: [
-      // { icon: 'github', link: '' },
-    // ]
+    title: 'Contributeur'
   },
   {
     avatar: 'https://www.github.com/NoAccount1.png',

@@ -12,12 +12,16 @@ hero:
     src: /favicon.webp
     alt: Logo de Robotech
   actions:
+  # TODO: Add quick start here
     - theme: brand
       text: Contribuer
       link: /Contribuer/
     - theme: alt
       text: Informatique
       link: /Info/
+    - theme: alt
+      text: Electronique
+      link: /Elec/
     - theme: alt
       text: Mécanique
       link: /Meca/
