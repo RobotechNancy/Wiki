@@ -1,3 +1,5 @@
+# TODO: Finish writing in there to replace `npm run build`
+
 from sys import argv
 import os
 import shutil
