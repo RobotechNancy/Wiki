@@ -96,7 +96,8 @@ export default defineConfig({
       {
         text: "Contribuer",
         items: [
-          { text: "Contribuer", link: "/Contribuer/" },
+          { text: "Quick start", link: "/Contribuer/" },
+          { text: "Guide complet", link: "/Contribuer/Guide" },
           { text: "Historique", link: "/Contribuer/Historique" },
         ],
       },
