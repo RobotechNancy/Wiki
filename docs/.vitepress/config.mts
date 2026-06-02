@@ -263,15 +263,7 @@ export default defineConfig({
             { text: "Préparation dans Fusion360", link: "/Meca/Usinage/SetupFusion360", },
             { text: "Préparation CNC", link: "/Meca/Usinage/SetupCNC", },
             { text: "Traitement usinage 2D", link: "/Meca/Usinage/Usinage2D" },
-            {
-              text: "Manufacture",
-              link: "/Meca/Fusion360/Manufacture",
-              items: [
-                { text: "Préparation", link: "/Meca/Fusion360/Manufacture/Preparation" },
-                { text: "Opérations", link: "/Meca/Fusion360/Manufacture/Operations" },
-                { text: "Export du programme", link: "/Meca/Fusion360/Manufacture/ProgramExport" },
-              ]
-            }
+            { text: "Manufacture", link: "Meca/Usinage/Manufacture" }
           ],
         },
         {
