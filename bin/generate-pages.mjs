@@ -123,7 +123,7 @@ function createMarkdownFile(filePath, link) {
     // Create basic markdown template
     const template = `# ${title}
 
-<!-- TODO: Add content for this page -->
+<!-- TODO: Add content for page ${title} -->
 
 This page is under construction.
 `;

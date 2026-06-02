@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Start dev server",
+      "label": "🌐 Start dev server",
       "command": "npm run dev",
       "type": "shell",
       "group": "build",
@@ -17,7 +17,7 @@
       }
     },
     {
-      "label": "Build project",
+      "label": "🔨 Build project",
       "command": "pnpm run build",
       "type": "shell",
       "group": "build",
@@ -32,7 +32,7 @@
       }
     },
     {
-      "label": "Generate tree",
+      "label": "🌳 Generate tree",
       "command": "npm run gen",
       "type": "shell",
       "group": "build",
@@ -47,11 +47,11 @@
       }
     },
         {
-      "label": "Compress image",
-      "command": "${workspaceFolder}/scripts/convert_to_webp.sh",
+      "label": "🖼️ Compress image",
+      "command": "${workspaceFolder}/bin/convert_to_webp.sh -y",
       "type": "shell",
       "windows": {
-        "command": "& 'C:\\Program Files\\Git\\bin\\bash.exe' ${workspaceFolder}/scripts/convert_to_webp.sh",
+        "command": "& 'C:\\Program Files\\Git\\bin\\bash.exe' ${workspaceFolder}\\bin\\convert_to_webp.sh -y",
       },
       "group": "build",
       "detail": "Convert images to Webp to reduce size",
