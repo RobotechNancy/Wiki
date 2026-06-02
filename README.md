@@ -1,19 +1,15 @@
 # Wiki de robotech
 
-TODO: Synchroniser cette page avec celle du wiki
-
 > [!WARNING]
 > La branche `master` est protégée en écriture, il est nécéssaire de créer une Pull Request pour faire des modifications
+>
+> [[Tutoriel]](Guide#utilisation-des-branches)
 
 ## Modifier une page
 
 - Ouvrir le fichier correspondant
 - Modifier le fichier
 - C'est bon
-
-> [!IMPORTANT]
-> Utiliser des balises `<img>` plutôt que la syntaxe Markdown `![]()` pour les images
-> Le zoom se base sur les balises `<img>`
 
 ## Ajouter une page
 
