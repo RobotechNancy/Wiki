@@ -3,7 +3,7 @@
     "dev": "vitepress dev docs --host",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs",
-    "gen": "node scripts/generate-pages.mjs"
+    "gen": "node bin/generate-pages.mjs"
   },
   "dependencies": {
     "@vueuse/core": "^14.2.1",
