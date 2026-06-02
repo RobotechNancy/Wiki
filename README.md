@@ -13,7 +13,7 @@
 
 ## Ajouter une page
 
-- Modifier [`/docs/.vitepress/config.mts`](/docs/.vitepress/config.mts) et y ajouter le document à l'emplacement voulu à l'aide de la template suivante :
+- Modifier `/docs/.vitepress/config.mts` et y ajouter le document à l'emplacement voulu à l'aide de la template suivante :
 
 ```ts
 {
