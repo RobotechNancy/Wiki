@@ -2,6 +2,9 @@
 
 TODO: Synchroniser cette page avec celle du wiki
 
+> [!WARNING]
+> La branche `master` est protégée en écriture, il est nécéssaire de créer une Pull Request pour faire des modifications
+
 ## Modifier une page
 
 - Ouvrir le fichier correspondant
