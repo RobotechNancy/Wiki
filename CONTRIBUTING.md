@@ -21,7 +21,45 @@ Le framework VitePress qui est utilisé est basé sur NodeJS. Il faut donc insta
     ```
 
 Vous pouvez maintenant installer les paquets nécessaire à l'aide de `pnpm`
+
 ```powershell
+pnpm install
+```
+
+### Linux
+- Installer NodeJS
+    ```bash
+    # Ubuntu / Debian-based
+    sudo apt install nodejs -y
+    ```
+    <details>
+    <summary>Autres distributions</summary>
+
+    ```bash
+    # Fedora / RHEL-based
+    sudo dnf install nodejs
+    ```
+
+    ```bash
+    # Archlinux
+    sudo pacman -Sy nodejs
+    ```
+
+    ```bash
+    # Fedora / RHEL-based
+    sudo xbps-install nodejs
+    ```
+    </details>
+
+- Installer pnpm
+    ```bash
+    curl -fsSL https://get.pnpm.io/install.sh | sh -
+    ```
+
+### Setup general
+
+Installer tous les paquets nécessaires
+```bash
 pnpm install
 ```
 
