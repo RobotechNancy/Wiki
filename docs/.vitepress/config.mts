@@ -159,6 +159,44 @@ export default defineConfig({
             { text: "VSCode", link: "/Info/STM32/VSCode" },
           ],
         },
+{
+          text: "Communication ",
+          collapsed: false,
+          items: [
+            {
+              text: "UART",
+              collapsed: true,
+              items: [
+                {
+                  text: "Principe",
+                  link: "/Info/Communication/UART/Principe",
+                },
+                {
+                  text: "Raspberry",
+                  link: "/Info/Communication/UART/Raspberry",
+                },
+                { 
+                  text: "STM32", 
+                  link: "/Info/Communication/UART/STM32" 
+                },
+              ],
+            },
+            {
+              text: "Bus I2C",
+              collapsed: true,
+              items: [
+                {
+                  text: "Principe",
+                  link: "/Info/Communication/I2C/Principe",
+                },
+                { 
+                  text: "STM32", 
+                  link: "/Info/Communication/I2C/STM32" 
+                },
+              ],
+            },
+          ],
+        },
         {
           text: "Signaux PWM",
           collapsed: false,
