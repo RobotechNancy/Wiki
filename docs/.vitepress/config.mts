@@ -122,17 +122,15 @@ export default defineConfig({
 
     sidebar: {
       "/Info/": [
-        {
-          text: "Introduction",
-          link: "/Info/",
-        },
+        { text: "Introduction", link: "/Info/", },
+        { text: "Installations", link: "/Info/Installation" },
         {
           text: "Débuter avec STM32",
           collapsed: false,
           items: [
-            { text: "Installations", link: "/Info/STM32/Installation" },
-            { text: "Création de l'IOC", link: "/Info/STM32/CreationIOC" },
-            { text: "Configuration de IDE", link: "/Info/STM32/ConfigIDE" },
+            { text: "STM32CubeMX", link: "/Info/STM32/STM32CubeMX" },
+            { text: "STM32CubeIDE", link: "/Info/STM32/STM32CubeIDE" },
+            { text: "VSCode", link: "/Info/STM32/VSCode" },
           ],
         },
         {
