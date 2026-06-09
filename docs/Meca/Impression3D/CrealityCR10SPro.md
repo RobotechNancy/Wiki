@@ -96,8 +96,10 @@ Il est nécéssaire de faire le **plus de contact possible** entre la pièce et 
 
 Une fois la pièce placée correctement, cliquez sur `Slice` en bas à droite de la fenêtre. Ainsi vous enregistrez le fichier de paramétrage d’impression de la pièce.
 Vous pouvez voir un aperçu en cliquant sur “Preview” en haut de la fenêtre.
-<Image src="/images/Meca/Impression3D/Cura_SliceButton.webp" alt="Bouton slice pour préparer la pièce" data-show-altPour enregistrer le fichier pour l’imprimante il vous faudra une **carte microSD**
-<Image src="/images/Meca/Impression3D/Creality_SDCard.webp" alt="Carte SD dans son adaptateur" data-show-alt5%" />
+<Image src="/images/Meca/Impression3D/Cura_SliceButton.webp" alt="Bouton slice pour préparer la pièce" data-show-alt />
+
+Pour enregistrer le fichier pour l’imprimante il vous faudra une **carte microSD**
+<Image src="/images/Meca/Impression3D/Creality_SDCard.webp" alt="Carte SD dans son adaptateur" data-show-alt />
 
 <Div>
 <p>Celle-ci est situé sur le côté</p>
@@ -109,7 +111,8 @@ Vous pouvez voir un aperçu en cliquant sur “Preview” en haut de la fenêtre
 > Sinon l’imprimante ne le détectera pas. [[source]](https://www.facebook.com/groups/323216258617076/posts/1908562576749095/)
 
 Allumer l’imprimante : appuyez sur `Print`, puis sélectionnez le fichier dans la liste qui apparaît à l’écran (Rappel : si le fichier n’apparaît pas, c probablement dû à un trop long nom de fichier).
-<Image src="/images/Meca/Impression3D/Creality_MenuPrint.webp" alt="Acceuil Creality - Touche 'Print' sélectionnée" width="75%" data-show-altUne fois l’impression lancée, l’imprimante va s’étalonner
+<Image src="/images/Meca/Impression3D/Creality_MenuPrint.webp" alt="Acceuil Creality - Touche 'Print' sélectionnée" width="75%" data-show-alt />
+Une fois l’impression lancée, l’imprimante va s’étalonner
 
 ## Changer la bobine
 
@@ -117,7 +120,8 @@ Allumer l’imprimante : appuyez sur `Print`, puis sélectionnez le fichier dans
 > Cette étape se déroule directement sur l’imprimante, pas besoin du logiciel.
 
 Pour retirer le fil charger, aller dans `Settings`, dedans vous aures plusieurs choix dont l’icône `Refuel`, cliquez dessus.
-<Image src="/images/Meca/Impression3D/Creality_MenuSettings.webp" alt="Acceuil Creality - Touche 'Settings' sélectionnée" width="75%" data-show-altVous pourrez ainsi retirer du fil petit à petit (`Retreat`)
+<Image src="/images/Meca/Impression3D/Creality_MenuSettings.webp" alt="Acceuil Creality - Touche 'Settings' sélectionnée" width="75%" data-show-alt />
+Vous pourrez ainsi retirer du fil petit à petit (`Retreat`)
 
 Une fois le fil retiré, chargez en un nouveau en le faisant passer par ces deux endroits :
 
