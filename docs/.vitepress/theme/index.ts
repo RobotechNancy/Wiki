@@ -7,6 +7,7 @@ import FileComponent from "./lib/FileComponent.vue";
 import ImgComponent from "./lib/ImgComponent.vue";
 import FloatDivComponent from "./lib/FloatDivComponent.vue";
 import ClipoardComponent from "./lib/ClipboardComponent.vue";
+import CardComponent from "./lib/CardComponent.vue";
 
 export default {
   extends: DefaultTheme,
@@ -16,5 +17,6 @@ export default {
     app.component("Image", ImgComponent);
     app.component("Div", FloatDivComponent);
     app.component("Copy", ClipoardComponent);
+    app.component("Card", CardComponent);
   },
 } satisfies Theme;
