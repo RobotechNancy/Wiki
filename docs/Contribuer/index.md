@@ -1,1 +1,3 @@
-<!-- @include: /../../README.md -->
+# Quick start
+
+<!-- @include: /../../README.md#Content -->
