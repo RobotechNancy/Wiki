@@ -71,7 +71,7 @@ Cet onglet permet de nommer le programme G-Code qui s'exportera.
 > [!tip]
 > Le nom et le commentaire pourront être modifiés dans une prochaine étape
 
-Lors de l'utilisation de [Candle](/Meca/Usinage/ProverXL4030/Parametrage), il est recommandé de mettre 54 dans l'onglet `Machine WCS` (premier offset en G-Code)
+Lors de l'utilisation de [Candle](/Meca/Usinage/SetupCNC#parametrage-de-candle), il est recommandé de mettre 54 dans l'onglet `Machine WCS` (premier offset en G-Code)
 
 ## Paramétrage du post-processeur
 
