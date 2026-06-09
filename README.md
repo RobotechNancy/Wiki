@@ -1,6 +1,9 @@
 # Wiki de robotech
 
-TODO: Synchroniser cette page avec celle du wiki
+> [!WARNING]
+> La branche `master` est protégée en écriture, il est nécéssaire de créer une Pull Request pour faire des modifications
+>
+> [[Tutoriel]](Guide#utilisation-des-branches)
 
 ## Modifier une page
 
@@ -8,13 +11,9 @@ TODO: Synchroniser cette page avec celle du wiki
 - Modifier le fichier
 - C'est bon
 
-> [!IMPORTANT]
-> Utiliser des balises `<img>` plutôt que la syntaxe Markdown `![]()` pour les images
-> Le zoom se base sur les balises `<img>`
-
 ## Ajouter une page
 
-- Modifier [`/docs/.vitepress/config.mts`](/docs/.vitepress/config.mts) et y ajouter le document à l'emplacement voulu à l'aide de la template suivante :
+- Modifier `/docs/.vitepress/config.mts` et y ajouter le document à l'emplacement voulu à l'aide de la template suivante :
 
 ```ts
 {

@@ -2,6 +2,8 @@
 import { useClipboard } from '@vueuse/core'
 import tools from '../assets/tools.json'
 
+//TODO: Add tools in tools.json
+
 const props = defineProps(["src"]);
 const src = props.src;
 
@@ -48,8 +50,7 @@ function load_profile() {
   font-size: medium;
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
-  transition:
-    all ease-in-out 0.1s, border-color 0.25s;
+  transition: var(--hover-animation);
   cursor: pointer;
   width: 100%;
   text-decoration: unset;
