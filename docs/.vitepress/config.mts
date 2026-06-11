@@ -252,9 +252,10 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: "Outils", link: "/Meca/Divers/Outils" },
-            // { text: "Matériel", link: "/Meca/Divers/Materiel/" },
+            { text: "Matériel", link: "/Meca/Divers/Materiel/" },
             { text: "Reset Candle", link: "/Meca/Divers/ResetCandle", },
             { text: "Gravure à l'EIT", link: "/Meca/Divers/GravureEIT", },
+            { text: "Animation", link: "/Meca/Divers/Animation", },
           ],
         },
         {
