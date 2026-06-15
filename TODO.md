@@ -14,21 +14,21 @@
 - [ ] Commande des moteurs pas à pas
 
 ## Usinage 3D
--[ ] setup le post process et la machine en premier
-	-[ ] Setup NC
-	-[ ] Post-processeur : GBRL
-	-[ ] Split by toolpath
-	-[ ] Noms des fichiers
-	-[ ] Dossier de sortie
+- [ ] setup le post process et la machine en premier
+	- [ ] Setup NC
+	- [ ] Post-processeur : GBRL
+	- [ ] Split by toolpath
+	- [ ] Noms des fichiers
+	- [ ] Dossier de sortie
 
--[ ] créer un setup (posage en FR)
-	-[ ] système d'axe
-	-[ ] sélectionner deux axes
-	-[ ] référence sur le brut
+- [ ] créer un setup (posage en FR)
+	- [ ] système d'axe
+	- [ ] sélectionner deux axes
+	- [ ] référence sur le brut
 
--[ ] Différents outils
-	-[ ] Profondeurs multiples
-	-[ ] Brut restant
+- [ ] Différents outils
+	- [ ] Profondeurs multiples
+	- [ ] Brut restant
 
 - [x] setup le post process et la machine en premier
 	- [x] Setup NC
