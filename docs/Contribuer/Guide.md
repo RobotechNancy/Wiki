@@ -1,5 +1,11 @@
 ---
 outline: [2, 3]
+prev:
+  text: 'Quick start'
+  link: '/Contribuer/'
+next:
+  text: 'Historique'
+  link: '/Contribuer/Historique'
 ---
 
 # Guide du contributeur

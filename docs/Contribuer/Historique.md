@@ -1,3 +1,9 @@
+---
+prev:
+  text: 'Guide complet'
+  link: '/Contribuer/Guide'
+---
+
 # Historique Robotech
 
 ## Années précédentes
