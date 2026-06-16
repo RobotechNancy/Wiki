@@ -1,4 +1,4 @@
-# GravureEIT
+# Graver une plaque à l'EIT
 
 Il faut faire un ticket au [service technique de l’EIT](https://helpdesk.univ-lorraine.fr/stylesheets/welcome.faces)
 

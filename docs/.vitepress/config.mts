@@ -252,26 +252,26 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: "Outils", link: "/Meca/Divers/Outils" },
-            { text: "Matériel", link: "/Meca/Divers/Materiel/" },
-            { text: "Commandes par défaut", link: "/Meca/Divers/CommandesParDefaut", },
-            { text: "Graver une plaque à l'EIT", link: "/Meca/Divers/GravureEIT", },
+            // { text: "Matériel", link: "/Meca/Divers/Materiel/" },
+            { text: "Reset Candle", link: "/Meca/Divers/ResetCandle", },
+            { text: "Gravure à l'EIT", link: "/Meca/Divers/GravureEIT", },
           ],
         },
         {
           text: "Usinage",
           collapsed: false,
           items: [
-            { text: "Préparation dans Fusion360", link: "/Meca/Usinage/SetupFusion360", },
             { text: "Préparation CNC", link: "/Meca/Usinage/SetupCNC", },
             { text: "Traitement usinage 2D", link: "/Meca/Usinage/Usinage2D" },
-            { text: "Manufacture", link: "Meca/Usinage/Manufacture" }
+            { text: "Manufacture dans Fusion360", link: "Meca/Usinage/Manufacture" }
+            // { text: "Préparation dans Fusion360", link: "/Meca/Usinage/SetupFusion360", },
           ],
         },
         {
           text: "Impression 3D",
           collapsed: false,
           items: [
-            { text: "Préparation dans Fusion360", link: "/Meca/Impression3D/SetupFusion360", },
+            { text: "Bambulab P1S", link: "/Meca/Impression3D/BambulabP1S", },
             { text: "Zortrax M200", link: "/Meca/Impression3D/ZortraxM200", },
             { text: "Creality CR-10S Pro", link: "/Meca/Impression3D/CrealityCR10SPro", },
             { text: "I3 Metal Motion", link: "/Meca/Impression3D/I3MetalMotion", },

@@ -22,7 +22,7 @@ En cas de besoin, se référer à la [documentation de Genmitsu](https://docs.sa
 - Le champ `User commands` devrait contenir les icones suivantes
   <img src="/images/Meca/SetupCNC/UserCommands.webp" alt="Panneau Control" left>
 
-[Reset entries]: /Meca/Divers/CommandesParDefaut "Réinitialiser les entrées"
+[Reset entries]: /Meca/Divers/ResetCandle "Réinitialiser les entrées"
 
 ## Calibrage
 
