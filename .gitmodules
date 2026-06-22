@@ -1,0 +1,4 @@
+[submodule "docs/Info/PAMI"]
+	path = docs/Info/PAMI
+	url = https://github.com/RobotechNancy/PAMI_2026.git
+	branch = feature/doc_only
