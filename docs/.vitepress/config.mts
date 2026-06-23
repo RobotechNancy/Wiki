@@ -291,6 +291,7 @@ export default defineConfig({
             { text: "Zortrax M200", link: "/Meca/Impression3D/ZortraxM200", },
             { text: "Creality CR-10S Pro", link: "/Meca/Impression3D/CrealityCR10SPro", },
             { text: "I3 Metal Motion", link: "/Meca/Impression3D/I3MetalMotion", },
+            { text: "Guide Filament", link: "/Meca/Impression3D/Filament", },
           ],
         },
         {
