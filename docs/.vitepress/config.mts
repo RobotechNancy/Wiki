@@ -278,7 +278,7 @@ export default defineConfig({
             { text: "I3 Metal Motion", link: "/Meca/Impression3D/I3MetalMotion", },
             { text: "Guide Filament", link: "/Meca/Impression3D/Filament", },
             { text: "Guide TPU", link: "/Meca/Impression3D/GuideTPU", },
-            { text: "Guide maintenance Imprimante 3D", link: "/Meca/Impression3D/Doc Maintenance 3D Printer", },
+            { text: "Guide maintenance Imprimante 3D", link: "/Meca/Impression3D/DocMaintenance3DPrinter", },
             { text: "Guide BambuStudio", link: "/Meca/Impression3D/GuideBambuStudio", },
           ],
         },
