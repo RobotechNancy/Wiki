@@ -185,6 +185,94 @@ export default defineConfig({
           ],
         },
         {
+          text: "Débuter avec STM32",
+          collapsed: false,
+          items: [
+            { text: "Installations", link: "/Info/STM32/Installation" },
+            { text: "Création de l'IOC", link: "/Info/STM32/CreationIOC" },
+            { text: "Configuration de IDE", link: "/Info/STM32/ConfigIDE" },
+          ],
+        },
+        {
+          text: "ROS",
+          collapsed: false,
+          items: [
+            {
+              text: "Présentation ROS",
+              link: "/Info/ROS/PresentationROS"
+            },
+            {
+              text: "Installation ROS",
+              link: "/Info/ROS/InstallationROS"
+            },
+            {
+              text: "Utilisation ROS",
+              link: "/Info/ROS/UtilisationROS"
+            }
+          ],
+        },
+        {
+          text: "Bus CAN",
+          collapsed: false,
+          items: [
+            { text: "Principe", link: "/Info/CAN/Principe" },
+            { text: "Librairie Raspberry", link: "/Info/CAN/Raspberry" },
+            { text: "Librairie STM32", link: "/Info/CAN/STM32" },
+            {
+              text: "Implémentation",
+              collapsed: true,
+              items: [
+                {
+                  text: "Format des trames",
+                  link: "/Info/CAN/Implementation/Format",
+                },
+                {
+                  text: "Initialisation",
+                  link: "/Info/CAN/Implementation/Initialisation",
+                },
+                {
+                  text: "Réception des données",
+                  link: "/Info/CAN/Implementation/Reception",
+                },
+                {
+                  text: "Envoi de données",
+                  link: "/Info/CAN/Implementation/Envoi",
+                },
+              ],
+            },
+          ],
+        },
+        {
+          text: "Modules XBee",
+          collapsed: false,
+          items: [
+            { text: "Principe", link: "/Info/XBee/Principe" },
+            { text: "Utiliser la librairie", link: "/Info/XBee/Librairie" },
+            {
+              text: "Implémentation",
+              collapsed: true,
+              items: [
+                {
+                  text: "Format des trames",
+                  link: "/Info/XBee/Implementation/Format",
+                },
+                {
+                  text: "Initialisation",
+                  link: "/Info/XBee/Implementation/Initialisation",
+                },
+                {
+                  text: "Réception des données",
+                  link: "/Info/XBee/Implementation/Reception",
+                },
+                {
+                  text: "Envoi de données",
+                  link: "/Info/XBee/Implementation/Envoi",
+                },
+              ],
+            },
+          ],
+        },
+        {
           text: "Odométrie",
           collapsed: false,
           items: [
