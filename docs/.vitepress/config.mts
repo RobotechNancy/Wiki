@@ -89,50 +89,112 @@ export default defineConfig({
     ],
 
     nav: [
-      { text: "Home", link: "/" },
-      {
-        text: "Pôles",
-        items: [
-          { text: "Informatique", link: "/Info/" },
-          { text: "Electronique", link: "/Elec/" },
-          { text: "Mecanique", link: "/Meca/" },
-        ]
-      },
-      {
-        text: "Historique",
-        items: [
-          { text: "Récapitulatif", link: "/Historique/Recap" },
-          { text: "Année 2020", link: "/Historique/Annee_2020" },
-          { text: "Année 2021", link: "/Historique/Annee_2021" },
-          { text: "Année 2022", link: "/Historique/Annee_2022" },
-          { text: "Année 2023", link: "/Historique/Annee_2023" },
-          { text: "Année 2024", link: "/Historique/Annee_2024" },
-          { text: "Année 2025", link: "/Historique/Annee_2025" },
-          { text: "Année 2026", link: "/Historique/Annee_2026" },
-        ]
-      },
+      { text: "Informatique", link: "/Info/" },
+      { text: "Electronique", link: "/Elec/" },
+      { text: "Mecanique", link: "/Meca/" },
+      { text: "Crédits", link: "/Credits" },
       {
         text: "Contribuer",
         items: [
-          { text: "Contribuer", link: "/Contribuer/" },
-          { text: "Crédits", link: "/Contribuer/Credits" },
+          { text: "Quick start", link: "/Contribuer/" },
+          { text: "Guide complet", link: "/Contribuer/Guide" },
+          { text: "Historique", link: "/Contribuer/Historique" },
         ],
       },
     ],
 
     sidebar: {
       "/Info/": [
+        { text: "Introduction", link: "/Info/", },
+        { text: "Installations", link: "/Info/Installation" },
         {
-          text: "Introduction",
-          link: "/Info/",
+          text: "Archives",
+          collapsed: true,
+          items: [
+            {
+              text: "Bus CAN",
+              collapsed: false,
+              items: [
+                { text: "Principe", link: "/Info/CAN/Principe" },
+                { text: "Librairie Raspberry", link: "/Info/CAN/Raspberry" },
+                { text: "Librairie STM32", link: "/Info/CAN/STM32" },
+                {
+                  text: "Implémentation",
+                  collapsed: true,
+                  items: [
+                    { text: "Format des trames", link: "/Info/CAN/Implementation/Format", },
+                    { text: "Initialisation", link: "/Info/CAN/Implementation/Initialisation", },
+                    { text: "Réception des données", link: "/Info/CAN/Implementation/Reception", },
+                    { text: "Envoi de données", link: "/Info/CAN/Implementation/Envoi", },
+                  ],
+                },
+              ],
+            },
+            {
+              text: "Modules XBee",
+              collapsed: false,
+              items: [
+                { text: "Principe", link: "/Info/XBee/Principe" },
+                { text: "Utiliser la librairie", link: "/Info/XBee/Librairie" },
+                {
+                  text: "Implémentation",
+                  collapsed: true,
+                  items: [
+                    { text: "Format des trames", link: "/Info/XBee/Implementation/Format", },
+                    { text: "Initialisation", link: "/Info/XBee/Implementation/Initialisation", },
+                    { text: "Réception des données", link: "/Info/XBee/Implementation/Reception", },
+                    { text: "Envoi de données", link: "/Info/XBee/Implementation/Envoi", },
+                  ],
+                },
+              ],
+            }
+          ]
         },
         {
           text: "Débuter avec STM32",
           collapsed: false,
           items: [
-            { text: "Installations", link: "/Info/STM32/Installation" },
-            { text: "Création de l'IOC", link: "/Info/STM32/CreationIOC" },
-            { text: "Configuration de IDE", link: "/Info/STM32/ConfigIDE" },
+            { text: "STM32CubeMX", link: "/Info/STM32/STM32CubeMX" },
+            { text: "STM32CubeIDE", link: "/Info/STM32/STM32CubeIDE" },
+            { text: "VSCode", link: "/Info/STM32/VSCode" },
+          ],
+        },
+{
+          text: "Communication ",
+          collapsed: false,
+          items: [
+            {
+              text: "UART",
+              collapsed: true,
+              items: [
+                {
+                  text: "Principe",
+                  link: "/Info/Communication/UART/Principe",
+                },
+                {
+                  text: "Raspberry",
+                  link: "/Info/Communication/UART/Raspberry",
+                },
+                { 
+                  text: "STM32", 
+                  link: "/Info/Communication/UART/STM32" 
+                },
+              ],
+            },
+            {
+              text: "Bus I2C",
+              collapsed: true,
+              items: [
+                {
+                  text: "Principe",
+                  link: "/Info/Communication/I2C/Principe",
+                },
+                { 
+                  text: "STM32", 
+                  link: "/Info/Communication/I2C/STM32" 
+                },
+              ],
+            },
           ],
         },
 {
@@ -182,14 +244,8 @@ export default defineConfig({
               text: "PCA9685",
               collapsed: true,
               items: [
-                {
-                  text: "Utiliser la librairie",
-                  link: "/Info/PWM/PCA9685/Librairie",
-                },
-                {
-                  text: "Implémentation",
-                  link: "/Info/PWM/PCA9685/Implementation",
-                },
+                { text: "Utiliser la librairie", link: "/Info/PWM/PCA9685/Librairie", },
+                { text: "Implémentation", link: "/Info/PWM/PCA9685/Implementation", },
               ],
             },
           ],
@@ -204,88 +260,17 @@ export default defineConfig({
             { text: "Créer une librairie", link: "/Info/CMake/Librairie" },
           ],
         },
-        
-        {
-          text: "Bus CAN",
-          collapsed: false,
-          items: [
-            { text: "Principe", link: "/Info/CAN/Principe" },
-            { text: "Librairie Raspberry", link: "/Info/CAN/Raspberry" },
-            { text: "Librairie STM32", link: "/Info/CAN/STM32" },
-            {
-              text: "Implémentation",
-              collapsed: true,
-              items: [
-                {
-                  text: "Format des trames",
-                  link: "/Info/CAN/Implementation/Format",
-                },
-                {
-                  text: "Initialisation",
-                  link: "/Info/CAN/Implementation/Initialisation",
-                },
-                {
-                  text: "Réception des données",
-                  link: "/Info/CAN/Implementation/Reception",
-                },
-                {
-                  text: "Envoi de données",
-                  link: "/Info/CAN/Implementation/Envoi",
-                },
-              ],
-            },
-          ],
-        },
-        {
-          text: "Modules XBee",
-          collapsed: false,
-          items: [
-            { text: "Principe", link: "/Info/XBee/Principe" },
-            { text: "Utiliser la librairie", link: "/Info/XBee/Librairie" },
-            {
-              text: "Implémentation",
-              collapsed: true,
-              items: [
-                {
-                  text: "Format des trames",
-                  link: "/Info/XBee/Implementation/Format",
-                },
-                {
-                  text: "Initialisation",
-                  link: "/Info/XBee/Implementation/Initialisation",
-                },
-                {
-                  text: "Réception des données",
-                  link: "/Info/XBee/Implementation/Reception",
-                },
-                {
-                  text: "Envoi de données",
-                  link: "/Info/XBee/Implementation/Envoi",
-                },
-              ],
-            },
-          ],
-        },
         {
           text: "Odométrie",
           collapsed: false,
           items: [
-            {
-              text: "Présentation Odométrie",
-              link: "/Info/Odometrie/PresentationOdometrie",
-            },
+            { text: "Présentation Odométrie", link: "/Info/Odometrie/PresentationOdometrie", },
             {
               text: "Odométrie Absolue",
               collapsed: true,
               items: [
-                {
-                  text: "Présentation générale",
-                  link: "/Info/Odometrie/Absolue/PresentationGenerale",
-                },
-                {
-                  text: "Présentation ArUCO",
-                  link: "/Info/Odometrie/Absolue/PresentationArUCO",
-                },
+                { text: "Présentation générale", link: "/Info/Odometrie/Absolue/PresentationGenerale", },
+                { text: "Présentation ArUCO", link: "/Info/Odometrie/Absolue/PresentationArUCO", },
                 { text: "Matériel", link: "/Info/Odometrie/Absolue/Materiel" },
                 {
                   text: "Programmes",
@@ -330,18 +315,9 @@ export default defineConfig({
           text: "Divers",
           collapsed: false,
           items: [
-            {
-              text: "Cartes utilisées",
-              link: "/Info/Cartes",
-            },
-            {
-              text: "Raspberry",
-              link: "/Info/RaspiLinux",
-            },
-            {
-              text: "Connexion SSH",
-              link: "/Info/ConnexionSSH",
-            },
+            { text: "Cartes utilisées", link: "/Info/Cartes", },
+            { text: "Raspberry", link: "/Info/RaspiLinux", },
+            { text: "Connexion SSH", link: "/Info/ConnexionSSH", },
           ],
         },
       ],
@@ -352,86 +328,37 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: "Outils", link: "/Meca/Divers/Outils" },
-            { text: "Exports Fusion360", link: "/Meca/Divers/Exports" },
-            {
-              text: "Commandes par défaut",
-              link: "/Meca/Divers/CommandesParDefaut",
-            },
-            {
-              text: "Graver une plaque à l'EIT",
-              link: "/Meca/Divers/GravureEIT",
-            },
-          ],
-        },
-        {
-          text: "Fusion360",
-          collapsed: false,
-          items: [
-            {
-              text: "Bonnes pratiques",
-              link: "/Meca/Fusion360/BonnesPratiques",
-            },
-            {
-              text: "Manufacture",
-              link: "/Meca/Fusion360/Manufacture",
-              items: [
-                { text: "Préparation", link: "/Meca/Fusion360/Manufacture/Preparation" },
-                { text: "Opérations", link: "/Meca/Fusion360/Manufacture/Operations" },
-                { text: "Export", link: "/Meca/Fusion360/Manufacture/Export" },
-              ]
-            }
+            // { text: "Matériel", link: "/Meca/Divers/Materiel/" },
+            { text: "Reset Candle", link: "/Meca/Divers/ResetCandle", },
+            { text: "Gravure à l'EIT", link: "/Meca/Divers/GravureEIT", },
           ],
         },
         {
           text: "Usinage",
           collapsed: false,
           items: [
-            {
-              text: "Préparation dans Fusion360",
-              link: "/Meca/Usinage/SetupFusion360",
-            },
-            {
-              text: "Utilisation CNC",
-              collapsed: true,
-              items: [
-                {
-                  text: "Installation logicielle",
-                  link: "/Meca/Usinage/ProverXL4030/Installation",
-                },
-                {
-                  text: "Paramétrage de Candle",
-                  link: "/Meca/Usinage/ProverXL4030/Parametrage",
-                },
-                {
-                  text: "Calibrage machine",
-                  link: "/Meca/Usinage/ProverXL4030/Calibrage",
-                },
-              ],
-            },
+            { text: "Préparation CNC", link: "/Meca/Usinage/SetupCNC", },
             { text: "Traitement usinage 2D", link: "/Meca/Usinage/Usinage2D" },
-            { text: "Traitement usinage 3D", link: "/Meca/Usinage/Usinage3D" },
+            { text: "Manufacture dans Fusion360", link: "Meca/Usinage/Manufacture" }
+            // { text: "Préparation dans Fusion360", link: "/Meca/Usinage/SetupFusion360", },
           ],
         },
         {
           text: "Impression 3D",
           collapsed: false,
           items: [
-            {
-              text: "Préparation dans Fusion360",
-              link: "/Meca/Impression3D/SetupFusion360",
-            },
-            {
-              text: "Zortrax M200",
-              link: "/Meca/Impression3D/ZortraxM200",
-            },
-            {
-              text: "Creality CR-10S Pro",
-              link: "/Meca/Impression3D/CrealityCR10SPro",
-            },
-            {
-              text: "I3 Metal Motion",
-              link: "/Meca/Impression3D/I3MetalMotion",
-            },
+            { text: "Bambulab P1S", link: "/Meca/Impression3D/BambulabP1S", },
+            { text: "Zortrax M200", link: "/Meca/Impression3D/ZortraxM200", },
+            { text: "Creality CR-10S Pro", link: "/Meca/Impression3D/CrealityCR10SPro", },
+            { text: "I3 Metal Motion", link: "/Meca/Impression3D/I3MetalMotion", },
+          ],
+        },
+        {
+          text: "Fusion360",
+          collapsed: false,
+          items: [
+            { text: "Bonnes pratiques", link: "/Meca/Fusion360/BonnesPratiques", },
+            { text: "Exports Modèle 3D", link: "/Meca/Fusion360/Exports" },
           ],
         },
       ],

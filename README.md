@@ -1,6 +1,10 @@
 # Wiki de robotech
 
-TODO: Synchroniser cette page avec celle du wiki
+<!-- #region Content -->
+> [!WARNING]
+> La branche `master` est protégée en écriture, il est nécéssaire de créer une Pull Request pour faire des modifications
+>
+> [[Tutoriel]](Guide#utilisation-des-branches)
 
 ## Modifier une page
 
@@ -8,13 +12,9 @@ TODO: Synchroniser cette page avec celle du wiki
 - Modifier le fichier
 - C'est bon
 
-> [!IMPORTANT]
-> Utiliser des balises `<img>` plutôt que la syntaxe Markdown `![]()` pour les images
-> Le zoom se base sur les balises `<img>`
-
 ## Ajouter une page
 
-- Modifier [`/docs/.vitepress/config.mts`](/docs/.vitepress/config.mts) et y ajouter le document à l'emplacement voulu à l'aide de la template suivante :
+- Modifier `/docs/.vitepress/config.mts` et y ajouter le document à l'emplacement voulu à l'aide de la template suivante :
 
 ```ts
 {
@@ -22,7 +22,14 @@ TODO: Synchroniser cette page avec celle du wiki
     link: "/Lien/Vers/La/Page/NomPage",
 },
 ```
-- Créer un document `NomPage.md` à l'emplacement spécifié dans le champ `link`
+- Appuyer sur `Ctrl + Shift + B` (commande `Tasks: Run build Task` par défaut dans VSCode)
+- Sélectionner `🌳 Generate tree`
+
+::: details Procédure manuelle
+Si vous n'utilisez pas VSCode, vous pouvez simplement créer un document `NomPage.md` à l'emplacement spécifié dans le champ `link`
+:::
 
 > [!NOTE]
 > Utiliser [PascalCase](https://pascal-case.com/) pour nommer les fichiers
+
+<!-- #endregion -->

@@ -16,6 +16,8 @@
   );
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-image-filter: blur(60px);
+
+  --hover-animation: all ease-in-out 0.1s, border-color 0.25s;
 }
 
 img.medium-zoom-image {

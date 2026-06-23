@@ -1,7 +1,8 @@
 <script setup>
-const props = defineProps(["src", "alt", "showAlt", "width", "height"]);
+const props = defineProps(["src", "alt", "width", "height", "dataShowAlt", "dataDisableZoom"]);
 
-const showAlt = props.showAlt;
+const disableZoom = props.dataDisableZoom;
+const showAlt = props.dataShowAlt;
 
 let width = props.width;
 let height = props.height;
@@ -17,6 +18,7 @@ let src = "/Wiki" + props.src;
       :alt="props.alt"
       :width="width"
       :height="height"
+      :data-disable-zoom="disableZoom"
     />
     <p class="alt-text">{{ props.alt }}</p>
   </div>
@@ -26,6 +28,7 @@ let src = "/Wiki" + props.src;
     :alt="props.alt"
     :width="width"
     :height="height"
+    :data-disable-zoom="disableZoom"
   />
 </template>
 
