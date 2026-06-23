@@ -175,11 +175,11 @@ done
 if [ "$confirm_replace" = "y" ] || [ "$1" = "-y" ]; then
     for ext in $filetypes; do
         info "Replacing extensions in" $ext "files"
-        files=$(grep -ERal --color "[a-zA-Z0-9_]+\.$ext" --exclude-dir=node_modules --include="*.md")
+        files=$(grep -ERal --color -I "[a-zA-Z0-9_]+\.$ext" --include="*.md" --exclude={"Credits.md","*.uc"} --exclude-dir={"node_modules","docs/.vitepress"})
         if [ -z "$files" ]; then
             warn "No file containing images path found for ext" $ext
         else
-            perl_replace=$'s/([\["\'])(?!https?:)([a-zA-Z0-9\/\._-]*\.)('$ext')/$1$2webp/g;'
+            perl_replace=$'s/([\["\']|(?!https?:))([a-zA-Z0-9\/\._-]*\.)('$ext')/$1$2webp/g;'
             debug "Perl regex" $perl_replace
             for file in $files; do
                 debug "Processing" "$file"
@@ -194,9 +194,10 @@ fi
 [ ! "$1" = "-y" ] && read -p "Delete files original files ? (y/N) " confirm_delete
 
 if [ "$confirm_delete" = "y" ] || [ "$1" = "-y" ]; then
-    for ext in $filetypes; do
-        error $(find . -name "*.$ext" -not -path "./docs/.vitepress/*" -exec rm {} \; 2>&1 > /dev/null)
-        debug "Removed" $ext "files"
+    info "Removing" "$ext" "files"
+    for ext in $filetypes ; do
+        error $(find . -name "*.$ext" -not -path "./docs/.vitepress/*" -not -path "node_modules" -exec rm {} \; 2>&1 > /dev/null)
+        debug "Handled" "$ext" "files"
     done
 else
     debug "Skipped" "$ext" "file deletion"

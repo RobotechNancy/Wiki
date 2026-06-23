@@ -5,7 +5,7 @@
 
 Le wiki couvre les sujets suivants :
 
-- Matériel disponible à Robotech (WIP)
+- [Matériel disponible à Robotech](/Meca/Divers/Materiel/) (WIP)
 - Configuration de la CNC
 - Utilisation des différentes imprimantes 3D
 - Tutoriels Fusion360 (WIP)

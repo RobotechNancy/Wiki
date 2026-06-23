@@ -91,6 +91,14 @@ const members = [
     links: [
       { icon: 'github', link: 'https://www.github.com/FreedGB' },
     ]
+  },
+  {
+    avatar: 'https://www.github.com/AnthonyHgl.png',
+    name: 'Anthony Hugel',
+    title: 'Contributeur',
+    links: [
+      { icon: 'github', link: 'https://www.github.com/AnthonyHgl' },
+    ]
   }
 ]
 </script>
