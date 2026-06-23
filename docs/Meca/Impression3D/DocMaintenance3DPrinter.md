@@ -2,8 +2,11 @@ Guide maintenance Imprimante 3D
 
 Connection Bambulab P1S ou autre de la même marque : 
 Étape 1 Allumer l’imprimante :
-<img src="/images/Meca/Impression3D/BoutonP1s.png" width="100%" class="no-shadow" />
+
+
+
 Étape 2 Instalée sur le Pc un Slicer compatible :
+
 Il faut instalée Bambu Handy sur Pc et/ou téléphone et aussi instalée Bambu Studio sur PC (Slicer) : https://bambulab.com/fr-fr/download/studio
 Un autre slicer équivalent est Orca Slicer qui donne plus de possibilité avec les imprimante autre que des imprimante Bambu Lab (ex : CR10)
 Étape 3 Connéctée l’imprimante au PC :
