@@ -38,7 +38,7 @@ ABS (Acrylonitrile butadiène styrène) :
 <img src="/images/Meca/Impression3D/PLA-vs-PLA-strength_1000x.webp" width="33%" class="no-shadow" />
 https://www.makershop.fr/blogs/guide/difference-entre-les-filaments-pla-pla
 
-<img src="/images/Meca/Impression3D/proprietes-mecaniques-pla-abs-pet-g.webp" width="33%" class="no-shadow" />
+<img src="/images/Meca/Impression3D/proprietes-mecaniques-pla-abs-pet-g.png" width="33%" class="no-shadow" />
 https://www.filimprimante3d.fr/pages/choisir-son-filament-le-guide-ultime-de-limprimeur-3d
 
 PVA (PolyVinyl Alcohol) :
@@ -70,8 +70,8 @@ Certient matériaux prenne l’humidité plus facilment que d’autre, le PLA es
 
 Pour les sécher, il faut utiliser un désydrateur de filament comme le PolyDryer et de le paramétrée pour le filament a sécher.
 
-<img src="/images/Meca/Impression3D/PolyDryer.webp" width="33%" class="no-shadow" />
-<img src="/images/Meca/Impression3D/TempDryer.webp" width="33%" class="no-shadow" />
+<img src="/images/Meca/Impression3D/PolyDryer.jpg" width="33%" class="no-shadow" />
+<img src="/images/Meca/Impression3D/TempDryer.jpg" width="33%" class="no-shadow" />
 
 Filament -CF :
 -Les filaments -CF sont des filaments standard avec des fibres de carbone PLA-CF, PETG-CF, etc…

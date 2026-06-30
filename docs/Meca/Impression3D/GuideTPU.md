@@ -5,7 +5,7 @@ TPU pour AMS : Facile comme tous les autres filaments, vous le mettez dans l’A
 
 TPU 95A et + :  Utilisez le support de bobine arrière de la BAMBOU LAB P1S et mettez le filament dans le tube jusqu’à ce qu’il y ait une résistance, puis chargez le filament depuis l’interface de l’imprimante.
 
-<img src="/images/Meca/Impression3D/GuideTPu.webp" width="33%" class="no-shadow" />
+<img src="/images/Meca/Impression3D/GuideTPu.png" width="33%" class="no-shadow" />
 
 Pour la CR-10 faite comme avec tous les autre filament.
 
