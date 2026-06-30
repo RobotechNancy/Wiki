@@ -178,15 +178,15 @@ export default defineConfig({
           text: "PAMI",
           collapsed: false,
           items: [
-            { text: "Présentation générale", link: "/Info/PAMI" },
-            { text: "Objet principal", link: "/Info/PAMI/docs/PAMI" },
-            { text: "Système de mission", link: "/Info/PAMI/docs/Mission" },
-            { text: "Base roulante", link: "/Info/PAMI/docs/Mobile_base" },
-            { text: "Moteur pas à pas", link: "/Info/PAMI/docs/Stepper" },
-            { text: "Pilote TMC2209", link: "/Info/PAMI/docs/TMC2209" },
-            { text: "Pince", link: "/Info/PAMI/docs/Gripper" },
-            { text: "Servomoteur", link: "/Info/PAMI/docs/Servomoteur" },
-            { text: "Debugger", link: "/Info/PAMI/docs/Debugger" }
+            { text: "Présentation générale", link: "/Info/PAMI/PresentationGenerale" },
+            { text: "Objet principal", link: "/Info/PAMI/PAMI_Object" },
+            { text: "Système de mission", link: "/Info/PAMI/Mission" },
+            { text: "Base roulante", link: "/Info/PAMI/Mobile_base" },
+            { text: "Moteur pas à pas", link: "/Info/PAMI/Stepper" },
+            { text: "Pilote TMC2209", link: "/Info/PAMI/TMC2209" },
+            { text: "Pince", link: "/Info/PAMI/Gripper" },
+            { text: "Servomoteur", link: "/Info/PAMI/Servomoteur" },
+            { text: "Debugger", link: "/Info/PAMI/Debugger" }
           ]
         },
         {
