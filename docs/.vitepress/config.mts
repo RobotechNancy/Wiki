@@ -288,12 +288,11 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: "Bambulab P1S", link: "/Meca/Impression3D/BambulabP1S", },
-            { text: "Zortrax M200", link: "/Meca/Impression3D/ZortraxM200", },
             { text: "Creality CR-10S Pro", link: "/Meca/Impression3D/CrealityCR10SPro", },
+            { text: "Zortrax M200", link: "/Meca/Impression3D/ZortraxM200", },
             { text: "I3 Metal Motion", link: "/Meca/Impression3D/I3MetalMotion", },
             { text: "Guide Filament", link: "/Meca/Impression3D/Filament", },
             { text: "Guide TPU", link: "/Meca/Impression3D/GuideTPU", },
-            { text: "Guide maintenance Imprimante 3D", link: "/Meca/Impression3D/Doc Maintenance 3D Printer", },
             { text: "Guide BambuStudio", link: "/Meca/Impression3D/GuideBambuStudio", },
           ],
         },
