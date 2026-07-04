@@ -147,7 +147,17 @@ export default defineConfig({
                   ],
                 },
               ],
-            }
+            },
+            {
+              text: "Build avec CMake",
+              collapsed: false,
+              items: [
+                { text: "Installer CMake", link: "/Info/CMake/Installation" },
+                { text: "Créer un éxecutable", link: "/Info/CMake/Executable" },
+                { text: "Lier des librairies", link: "/Info/CMake/Lier" },
+                { text: "Créer une librairie", link: "/Info/CMake/Librairie" },
+              ],
+            },
           ]
         },
         {
@@ -178,26 +188,16 @@ export default defineConfig({
           text: "PAMI",
           collapsed: false,
           items: [
-            { text: "Présentation générale", link: "/Info/PAMI" },
-            { text: "Objet principal", link: "/Info/PAMI/docs/PAMI" },
-            { text: "Système de mission", link: "/Info/PAMI/docs/Mission" },
-            { text: "Base roulante", link: "/Info/PAMI/docs/Mobile_base" },
-            { text: "Moteur pas à pas", link: "/Info/PAMI/docs/Stepper" },
-            { text: "Pilote TMC2209", link: "/Info/PAMI/docs/TMC2209" },
-            { text: "Pince", link: "/Info/PAMI/docs/Gripper" },
-            { text: "Servomoteur", link: "/Info/PAMI/docs/Servomoteur" },
-            { text: "Debugger", link: "/Info/PAMI/docs/Debugger" }
+            { text: "Présentation générale", link: "/Info/PAMI/PresentationGenerale" },
+            { text: "Objet principal", link: "/Info/PAMI/PAMI_Object" },
+            { text: "Système de mission", link: "/Info/PAMI/Mission" },
+            { text: "Base roulante", link: "/Info/PAMI/Mobile_base" },
+            { text: "Moteur pas à pas", link: "/Info/PAMI/Stepper" },
+            { text: "Pilote TMC2209", link: "/Info/PAMI/TMC2209" },
+            { text: "Pince", link: "/Info/PAMI/Gripper" },
+            { text: "Servomoteur", link: "/Info/PAMI/Servomoteur" },
+            { text: "Debugger", link: "/Info/PAMI/Debugger" }
           ]
-        },
-        {
-          text: "Build avec CMake",
-          collapsed: false,
-          items: [
-            { text: "Installer CMake", link: "/Info/CMake/Installation" },
-            { text: "Créer un éxecutable", link: "/Info/CMake/Executable" },
-            { text: "Lier des librairies", link: "/Info/CMake/Lier" },
-            { text: "Créer une librairie", link: "/Info/CMake/Librairie" },
-          ],
         },
         {
           text: "Odométrie",
@@ -288,12 +288,11 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: "Bambulab P1S", link: "/Meca/Impression3D/BambulabP1S", },
-            { text: "Zortrax M200", link: "/Meca/Impression3D/ZortraxM200", },
             { text: "Creality CR-10S Pro", link: "/Meca/Impression3D/CrealityCR10SPro", },
+            { text: "Zortrax M200", link: "/Meca/Impression3D/ZortraxM200", },
             { text: "I3 Metal Motion", link: "/Meca/Impression3D/I3MetalMotion", },
             { text: "Guide Filament", link: "/Meca/Impression3D/Filament", },
             { text: "Guide TPU", link: "/Meca/Impression3D/GuideTPU", },
-            { text: "Guide maintenance Imprimante 3D", link: "/Meca/Impression3D/DocMaintenance3DPrinter", },
             { text: "Guide BambuStudio", link: "/Meca/Impression3D/GuideBambuStudio", },
           ],
         },

@@ -133,6 +133,24 @@ Une fois le fil retiré, chargez en un nouveau en le faisant passer par ces deux
 
 Retourner sur l’écran et cette fois-ci, faites entrer petit à petit le fil avec `Feed`.
 
+## Maintenance sur CR-10 : démontage de l'extrudeur
+
+Pour accéder à l’intérieur de l’extrudeur, il faut démonter certaines parties de l’assemblage.
+
+### 1ère étape :
+
+<img src="/images/Meca/Impression3D/Cr10F.webp" width="100%" class="no-shadow" />
+
+### 2ème étape :
+
+<img src="/images/Meca/Impression3D/Cr10I.webp" width="100%" class="no-shadow" />
+
+### 3ème étape :
+
+Vous pouvez maintenant dévisser la vis à l’arrière de l’extrudeur et le moteur à l’avant pour avoir accès à l’intérieur de l’extrudeur.
+
+<img src="/images/Meca/Impression3D/Cr10B.webp" width="100%" class="no-shadow" />
+
 Pour plus d'informations, demandez sur le Discord au rôle `@C&F🦾`
 
 <!--
