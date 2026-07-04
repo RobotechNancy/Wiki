@@ -147,7 +147,17 @@ export default defineConfig({
                   ],
                 },
               ],
-            }
+            },
+            {
+              text: "Build avec CMake",
+              collapsed: false,
+              items: [
+                { text: "Installer CMake", link: "/Info/CMake/Installation" },
+                { text: "Créer un éxecutable", link: "/Info/CMake/Executable" },
+                { text: "Lier des librairies", link: "/Info/CMake/Lier" },
+                { text: "Créer une librairie", link: "/Info/CMake/Librairie" },
+              ],
+            },
           ]
         },
         {
@@ -188,16 +198,6 @@ export default defineConfig({
             { text: "Servomoteur", link: "/Info/PAMI/Servomoteur" },
             { text: "Debugger", link: "/Info/PAMI/Debugger" }
           ]
-        },
-        {
-          text: "Build avec CMake",
-          collapsed: false,
-          items: [
-            { text: "Installer CMake", link: "/Info/CMake/Installation" },
-            { text: "Créer un éxecutable", link: "/Info/CMake/Executable" },
-            { text: "Lier des librairies", link: "/Info/CMake/Lier" },
-            { text: "Créer une librairie", link: "/Info/CMake/Librairie" },
-          ],
         },
         {
           text: "Odométrie",
