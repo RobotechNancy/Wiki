@@ -92,13 +92,13 @@ export default defineConfig({
       { text: "Informatique", link: "/Info/" },
       { text: "Electronique", link: "/Elec/" },
       { text: "Mecanique", link: "/Meca/" },
+      { text: "Historique", link: "/Historique" },
       { text: "Crédits", link: "/Credits" },
       {
         text: "Contribuer",
         items: [
           { text: "Quick start", link: "/Contribuer/" },
           { text: "Guide complet", link: "/Contribuer/Guide" },
-          { text: "Historique", link: "/Contribuer/Historique" },
         ],
       },
     ],

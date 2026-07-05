@@ -1,5 +1,7 @@
 # Bienvenue
 
+<!-- TODO : Ajouter des images  -->
+
 Bienvenue à Robotech, l'équipe de Polytech participant chaque année (si l'on finit à temps) à la Coupe de France de Robotique ! Ce guide a pour but pour vous donner un peu de contexte, ainsi que de vous proposer une démarche à suivre pour la bonne conduite du projet.
 
 
