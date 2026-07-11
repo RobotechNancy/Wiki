@@ -26,16 +26,16 @@ prev:
 
 <!-- TODO: Add content for Année 2026 -->
 
-<img src="/images/Robot_2026.png" style = "width: 100%; margin-bottom: 30px;">
+<img src="/images/Robot_2026.webp" style = "width: 100%; margin-bottom: 30px;">
 
-<img src="/images/PAMI_2026.png" style = "width: 100%; margin-bottom: 30px;">
+<img src="/images/PAMI_2026.webp" style = "width: 100%; margin-bottom: 30px;">
 
 Les rapports sont situées sur le Drive `Robotech/CDFR 2025-2026/Rapports_2025-2026`.
 
 ## Année 2025 : The show must go on
 
 
-<img src="/images/Robot_2025.png" style = "width: 100%; margin-bottom: 30px;">
+<img src="/images/Robot_2025.webp" style = "width: 100%; margin-bottom: 30px;">
 
 <img src="/images/Equipe_2025.webp" style = "width: 100%; margin-bottom: 30px;">
 
@@ -43,15 +43,15 @@ Les rapports sont situées sur le Drive `Robotech/CDFR 2025-2026/Rapports_2025-2
 ## Année 2024 : Farming mars
 
 
-<img src="/images/Poster_2024.png" style = "width: 100%; margin-bottom: 30px;">
+<img src="/images/Poster_2024.webp" style = "width: 100%; margin-bottom: 30px;">
 
-<img src="/images/Equipe_2024.jpg" width="100%">
+<img src="/images/Equipe_2024.webp" width="100%">
 
 ## Année 2023 : The cherry on the cake
 
-<img src="/images/Poster_2023.jpg" style = "width: 100%; margin-bottom: 30px;">
+<img src="/images/Poster_2023.webp" style = "width: 100%; margin-bottom: 30px;">
 
-<img src="/images/Equipe_2023.png" style = "width: 100%; margin-bottom: 30px;">
+<img src="/images/Equipe_2023.webp" style = "width: 100%; margin-bottom: 30px;">
 
 <iframe width = "100%" src="https://www.youtube.com/embed/G0KijXskF-Y" height = "315px" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
