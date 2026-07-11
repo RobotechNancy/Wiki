@@ -90,15 +90,16 @@ export default defineConfig({
 
     nav: [
       { text: "Informatique", link: "/Info/" },
-      { text: "Electronique", link: "/Elec/" },
-      { text: "Mecanique", link: "/Meca/" },
+      { text: "Électronique", link: "/Elec/" },
+      { text: "Mécanique", link: "/Meca/" },
+      { text: "Historique", link: "/Historique" },
+      { text: "Idées", link: "/Idees" },
       { text: "Crédits", link: "/Credits" },
       {
         text: "Contribuer",
         items: [
           { text: "Quick start", link: "/Contribuer/" },
           { text: "Guide complet", link: "/Contribuer/Guide" },
-          { text: "Historique", link: "/Contribuer/Historique" },
         ],
       },
     ],
