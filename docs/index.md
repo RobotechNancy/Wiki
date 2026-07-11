@@ -20,7 +20,7 @@ hero:
       text: Informatique
       link: /Info/
     - theme: alt
-      text: Electronique
+      text: Électronique
       link: /Elec/
     - theme: alt
       text: Mécanique
@@ -36,10 +36,10 @@ features:
   - title: Historique
     details: Remontez le temps pour découvrir les travaux des équipes précédentes
     link: Historique
-    icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cpu-icon lucide-cpu"> <path d="M17 3.33782C15.5291 2.48697 13.8214 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 10.5778 21.7031 9.22492 21.1679 8" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="0.5 3.5"/> <path d="M22 12C22 10.1786 21.513 8.47087 20.6622 7M12 2C13.8214 2 15.5291 2.48697 17 3.33782" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/> <path d="M12 9V13H16" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+    icon: <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cpu-icon lucide-cpu"> <path d="M17 3.33782C15.5291 2.48697 13.8214 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 10.5778 21.7031 9.22492 21.1679 8" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="0.5 3.5"/> <path d="M22 12C22 10.1786 21.513 8.47087 20.6622 7M12 2C13.8214 2 15.5291 2.48697 17 3.33782" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/> <path d="M12 9V13H16" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </svg>
 
   - title: Idées de fonctionnalités
-    details: Tout ce qu'il faut savoir sur l'informatique
+    details: Une liste de fonctionnalités à implémenter
     link: /Idees
     icon: <svg height="30" width="30" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cpu-icon lucide-cpu" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 279.682 279.682" xml:space="preserve">
       <g>
