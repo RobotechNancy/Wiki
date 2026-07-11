@@ -12,7 +12,7 @@ prev:
 - **2017 : septembre création de Robotech, départ !**
 - 2018 : 2 Robots en compétition avec 2 équipes (souffleur de balle)
 - 2019 : Robot en compétition Châssis métal, mais **carte électronique endommagée** par Hugo Seigneur
-- 2020 : Année Covid (**aucune compétition**)
+- 2020: Année Covid (**aucune compétition**)
 - 2021 : Compétition déplacée à début juillet, mais base roulante pas prête **annulation de la compétition**
 - [2022](#année-2022--the-age-of-bots) : départ à la coupe, homologation d’un des deux robots. **2 matchs sur 5. 0 points au premier et 5 au deuxième, classement final : 66/66**
 - [2023](#année-2023--the-cherry-on-the-cake) : départ à la coupe, homologation de la boîte mais problème de bus CAN. Aucun match effectué donc **0 point**
@@ -26,7 +26,11 @@ prev:
 
 <!-- TODO: Add content for Année 2026 -->
 
-This page is under construction.
+<img src="/images/Robot_2026.png" style = "width: 100%; margin-bottom: 30px;">
+
+<img src="/images/PAMI_2026.png" style = "width: 100%; margin-bottom: 30px;">
+
+Les rapports sont situées sur le Drive `Robotech/CDFR 2025-2026/Rapports_2025-2026`.
 
 ## Année 2025 : The show must go on
 
@@ -104,21 +108,3 @@ Carte des poteaux <span style="color: red">(En cours de réalisation)</span>
 ## Année 2022 : The age of bots
 
 <iframe width = "100%" src="https://www.youtube.com/embed/wmkiutIJAws" height = "315px" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-## Année 2021
-
-<!-- TODO: Add content for Année 2021 -->
-
-This page is under construction.
-
-## Année 2020
-
-<!-- TODO: Add content for Année 2020 -->
-
-This page is under construction.
-
-## Année 2019
-
-<!-- TODO: Add content for Année 2019 -->
-
-This page is under construction.
