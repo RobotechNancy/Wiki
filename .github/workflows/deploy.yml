@@ -32,6 +32,10 @@ jobs:
         with:
           fetch-depth: 0 # Not needed if lastUpdated is not enabled
 
+      - name: Update submodules
+        run: |
+          git submodule update --init --recursive
+
       - uses: pnpm/action-setup@v4
 
       - name: Setup Node
