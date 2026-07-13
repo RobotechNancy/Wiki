@@ -31,10 +31,8 @@ jobs:
         uses: actions/checkout@v5
         with:
           fetch-depth: 0 # Not needed if lastUpdated is not enabled
+          submodules: recursive
 
-      - name: Update submodules
-        run: |
-          git submodule update --init --recursive
 
       - uses: pnpm/action-setup@v4
 
