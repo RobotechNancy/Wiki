@@ -30,9 +30,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
         with:
-          fetch-depth: 0 # Not needed if lastUpdated is not enabled
+          fetch-depth: 0
           submodules: recursive
-          token: ${{ secrets.GITHUB_TOKEN }}
+          ssh-key: ${{ secrets.PAMI_DEPLOY_KEY }}
 
 
       - uses: pnpm/action-setup@v4
