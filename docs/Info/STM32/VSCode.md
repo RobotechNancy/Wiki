@@ -5,9 +5,9 @@ description: Utilisation de l'extension STM32 pour VSCode
 
 # Utilisation de l'extension STM32CubeIDE for Visual Studio Code
 
-Développée en 2025, il s'agit d'une extension de VSCode qui permet d'obtenir les mêmes fonctionnalités que STM32CubeIDE tout en restant sur VSCode (qui est bien plus aisé à prendre en main).
+Développée en 2025, il s'agit d'une extension de VSCode qui permet d'obtenir les mêmes fonctionnalités que STM32CubeIDE tout en restant sur VSCode.
 
-Si vous n'avez pas envie de développer dans l'IDE STM32, cette extension vaut vraiment le coup. Cependant, quelques soucis de configurations par-ci par-là apparaissent occasionnellement. Si cela ne vous fait pas peur, foncez !
+Si vous n'avez pas envie de développer dans l'IDE STM32, cette extension peut-être intéressante. Cependant, quelques soucis de configurations par-ci par-là apparaissent occasionnellement. Si cela ne vous fait pas peur, allez-y.
 
 
 ## Installation
@@ -28,7 +28,7 @@ Comme avec STM32CubeIDE, nous vous recommandons de créer d'abord le fichier `.i
 > [!NOTE]
 > Il semblerait que pour tous les autres projets comportant des CMake, l'extension vous demandera s'il peut les configurer en tant que projet STM32. Il suffira donc de refuser. Si cela vous dérange, le plus simple est de désactiver l'extension lorsque vous travaillez sur d'autres projets.
 
-Une fois cela fait, il va falloir mettre à jour le firmware de votre microcontroleur STM32 (si ce n'est pas déjà fait). Il suffit de connecter votre carte à votre PC, puis de vous rendre dans la section `Run and debug` de VSCode (l'icône Play avec un insecte), où vous verrez un onglet `STM32CUBE DEVICES AND BOARDS`. Votre carte y apparaîtra. Cliquez sur l'icone de la flèche descendante pour la mise à jour.
+Une fois cela fait, il va falloir mettre à jour le firmware de votre microcontrôleur STM32 (si ce n'est pas déjà fait). Il suffit de connecter votre carte à votre PC, puis de vous rendre dans la section `Run and debug` de VSCode (l'icône Play avec un insecte), où vous verrez un onglet `STM32CUBE DEVICES AND BOARDS`. Votre carte y apparaîtra. Cliquez sur l'icone de la flèche descendante pour la mise à jour.
 
 <img src="/images/Info/STM32/vscode/firmware_update.webp" alt="Firware update">
 
