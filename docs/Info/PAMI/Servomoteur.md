@@ -40,7 +40,7 @@ typedef enum Servo_status {
 
 Un servo Parallax attend un train d'impulsions répétées :
 
-![Fonctionnement servomoteur](img/Parallax%20standard%20servo.webp)
+![Fonctionnement servomoteur](/images/Info/PAMI/Parallax_standard_servo.webp)
 
 - **H (durée haute)** : encode l'angle (750 µs à 2250 µs)
 - **DELAY** : pause entre impulsions (20 000 µs = 20 ms)
